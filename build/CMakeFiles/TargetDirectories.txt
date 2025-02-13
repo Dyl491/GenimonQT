@@ -1,0 +1,4 @@
+C:/Users/dylan/OneDrive/Documents/Qt project/Genimon/build/CMakeFiles/Genimon.dir
+C:/Users/dylan/OneDrive/Documents/Qt project/Genimon/build/CMakeFiles/INSTALL.dir
+C:/Users/dylan/OneDrive/Documents/Qt project/Genimon/build/CMakeFiles/ALL_BUILD.dir
+C:/Users/dylan/OneDrive/Documents/Qt project/Genimon/build/CMakeFiles/ZERO_CHECK.dir

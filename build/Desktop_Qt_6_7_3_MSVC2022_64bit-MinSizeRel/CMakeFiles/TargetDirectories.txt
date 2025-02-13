@@ -1,0 +1,8 @@
+C:/Users/dylan/OneDrive/Documents/Qt project/Genimon/build/Desktop_Qt_6_7_3_MSVC2022_64bit-MinSizeRel/CMakeFiles/Genimon.dir
+C:/Users/dylan/OneDrive/Documents/Qt project/Genimon/build/Desktop_Qt_6_7_3_MSVC2022_64bit-MinSizeRel/CMakeFiles/edit_cache.dir
+C:/Users/dylan/OneDrive/Documents/Qt project/Genimon/build/Desktop_Qt_6_7_3_MSVC2022_64bit-MinSizeRel/CMakeFiles/rebuild_cache.dir
+C:/Users/dylan/OneDrive/Documents/Qt project/Genimon/build/Desktop_Qt_6_7_3_MSVC2022_64bit-MinSizeRel/CMakeFiles/list_install_components.dir
+C:/Users/dylan/OneDrive/Documents/Qt project/Genimon/build/Desktop_Qt_6_7_3_MSVC2022_64bit-MinSizeRel/CMakeFiles/install.dir
+C:/Users/dylan/OneDrive/Documents/Qt project/Genimon/build/Desktop_Qt_6_7_3_MSVC2022_64bit-MinSizeRel/CMakeFiles/install/local.dir
+C:/Users/dylan/OneDrive/Documents/Qt project/Genimon/build/Desktop_Qt_6_7_3_MSVC2022_64bit-MinSizeRel/CMakeFiles/Genimon_autogen_timestamp_deps.dir
+C:/Users/dylan/OneDrive/Documents/Qt project/Genimon/build/Desktop_Qt_6_7_3_MSVC2022_64bit-MinSizeRel/CMakeFiles/Genimon_autogen.dir

@@ -1,0 +1,64 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="17.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="C:\Users\dylan\OneDrive\Documents\Qt project\Genimon\build\Genimon_autogen\mocs_compilation_Debug.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\dylan\OneDrive\Documents\Qt project\Genimon\main.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\dylan\OneDrive\Documents\Qt project\Genimon\mainwindow.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\dylan\OneDrive\Documents\Qt project\Genimon\build\Genimon_autogen\mocs_compilation_Release.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\dylan\OneDrive\Documents\Qt project\Genimon\build\Genimon_autogen\mocs_compilation_MinSizeRel.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\dylan\OneDrive\Documents\Qt project\Genimon\build\Genimon_autogen\mocs_compilation_RelWithDebInfo.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="C:\Users\dylan\OneDrive\Documents\Qt project\Genimon\mainwindow.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\dylan\OneDrive\Documents\Qt project\Genimon\build\Genimon_autogen\include_Debug\ui_mainwindow.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\dylan\OneDrive\Documents\Qt project\Genimon\build\Genimon_autogen\include_Release\ui_mainwindow.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\dylan\OneDrive\Documents\Qt project\Genimon\build\Genimon_autogen\include_MinSizeRel\ui_mainwindow.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\dylan\OneDrive\Documents\Qt project\Genimon\build\Genimon_autogen\include_RelWithDebInfo\ui_mainwindow.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="C:\Users\dylan\OneDrive\Documents\Qt project\Genimon\build\CMakeFiles\cc23f11e5b3c106e770a920a90164acc\autouic_(CONFIG).stamp.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\Users\dylan\OneDrive\Documents\Qt project\Genimon\CMakeLists.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="C:\Users\dylan\OneDrive\Documents\Qt project\Genimon\mainwindow.ui" />
+    <None Include="C:\Users\dylan\OneDrive\Documents\Qt project\Genimon\build\Genimon_autogen\autouic_Debug.stamp" />
+    <None Include="C:\Users\dylan\OneDrive\Documents\Qt project\Genimon\build\Genimon_autogen\autouic_Release.stamp" />
+    <None Include="C:\Users\dylan\OneDrive\Documents\Qt project\Genimon\build\Genimon_autogen\autouic_MinSizeRel.stamp" />
+    <None Include="C:\Users\dylan\OneDrive\Documents\Qt project\Genimon\build\Genimon_autogen\autouic_RelWithDebInfo.stamp" />
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="CMake Rules">
+      <UniqueIdentifier>{82E69382-0A3D-3BF9-B960-89605B606C72}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{731DEB3F-E2BC-310A-A989-478992C23387}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{6E1758CC-1D4E-32A0-9588-64FAB6EB520F}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

@@ -1,0 +1,79 @@
+{
+	"configurations" : 
+	[
+		{
+			"directories" : 
+			[
+				{
+					"build" : ".",
+					"hasInstallRule" : true,
+					"jsonFile" : "directory-.-MinSizeRel-9d375427bda145e81843.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.16"
+					},
+					"projectIndex" : 0,
+					"source" : ".",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2
+					]
+				}
+			],
+			"name" : "MinSizeRel",
+			"projects" : 
+			[
+				{
+					"directoryIndexes" : 
+					[
+						0
+					],
+					"name" : "Genimon",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2
+					]
+				}
+			],
+			"targets" : 
+			[
+				{
+					"directoryIndex" : 0,
+					"id" : "Genimon::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-Genimon-MinSizeRel-e8d36187613fe97e281d.json",
+					"name" : "Genimon",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "Genimon_autogen::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-Genimon_autogen-MinSizeRel-386aea50a13b92a86f6e.json",
+					"name" : "Genimon_autogen",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "Genimon_autogen_timestamp_deps::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-Genimon_autogen_timestamp_deps-MinSizeRel-012e65fc4f158c6f8dbf.json",
+					"name" : "Genimon_autogen_timestamp_deps",
+					"projectIndex" : 0
+				}
+			]
+		}
+	],
+	"kind" : "codemodel",
+	"paths" : 
+	{
+		"build" : "C:/Users/dylan/OneDrive/Documents/Qt project/Genimon/build/Desktop_Qt_6_7_3_MSVC2022_64bit-MinSizeRel",
+		"source" : "C:/Users/dylan/OneDrive/Documents/Qt project/Genimon"
+	},
+	"version" : 
+	{
+		"major" : 2,
+		"minor" : 7
+	}
+}
