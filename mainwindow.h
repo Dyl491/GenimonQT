@@ -3,6 +3,7 @@
 
 #include <QMainWindow>
 #include "regle.h"
+#include "choixjoueur.h"
 
 QT_BEGIN_NAMESPACE
 namespace Ui {
@@ -21,10 +22,14 @@ public:
 private slots:
     void on_Quitter_clicked(bool checked);
 
-    void on_pushButton_clicked(bool checked);
+    void on_Start_clicked(bool checked);
+
+    void on_Regle_clicked(bool checked);
 
 private:
     Ui::MainWindow *ui;
     Regle *regle;
+    ChoixJoueur *choixJoueur;
+
 };
 #endif // MAINWINDOW_H

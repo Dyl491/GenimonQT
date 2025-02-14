@@ -273,9 +273,51 @@
 	"HEADERS" : 
 	[
 		[
+			"C:/Users/dylan/OneDrive/Documents/Qt project/Genimon/capture.h",
+			"MU",
+			"EWIEGA46WW/moc_capture.cpp",
+			null
+		],
+		[
+			"C:/Users/dylan/OneDrive/Documents/Qt project/Genimon/choixgenimon.h",
+			"MU",
+			"EWIEGA46WW/moc_choixgenimon.cpp",
+			null
+		],
+		[
+			"C:/Users/dylan/OneDrive/Documents/Qt project/Genimon/choixjoueur.h",
+			"MU",
+			"EWIEGA46WW/moc_choixjoueur.cpp",
+			null
+		],
+		[
 			"C:/Users/dylan/OneDrive/Documents/Qt project/Genimon/combat.h",
 			"MU",
 			"EWIEGA46WW/moc_combat.cpp",
+			null
+		],
+		[
+			"C:/Users/dylan/OneDrive/Documents/Qt project/Genimon/extfaculte.h",
+			"MU",
+			"EWIEGA46WW/moc_extfaculte.cpp",
+			null
+		],
+		[
+			"C:/Users/dylan/OneDrive/Documents/Qt project/Genimon/genidex.h",
+			"MU",
+			"EWIEGA46WW/moc_genidex.cpp",
+			null
+		],
+		[
+			"C:/Users/dylan/OneDrive/Documents/Qt project/Genimon/historencontre.h",
+			"MU",
+			"EWIEGA46WW/moc_historencontre.cpp",
+			null
+		],
+		[
+			"C:/Users/dylan/OneDrive/Documents/Qt project/Genimon/intfaculte.h",
+			"MU",
+			"EWIEGA46WW/moc_intfaculte.cpp",
 			null
 		],
 		[
@@ -285,9 +327,21 @@
 			null
 		],
 		[
+			"C:/Users/dylan/OneDrive/Documents/Qt project/Genimon/pause.h",
+			"MU",
+			"EWIEGA46WW/moc_pause.cpp",
+			null
+		],
+		[
 			"C:/Users/dylan/OneDrive/Documents/Qt project/Genimon/regle.h",
 			"MU",
 			"EWIEGA46WW/moc_regle.cpp",
+			null
+		],
+		[
+			"C:/Users/dylan/OneDrive/Documents/Qt project/Genimon/transcombat.h",
+			"MU",
+			"EWIEGA46WW/moc_transcombat.cpp",
 			null
 		]
 	],
@@ -348,7 +402,42 @@
 	"SOURCES" : 
 	[
 		[
+			"C:/Users/dylan/OneDrive/Documents/Qt project/Genimon/capture.cpp",
+			"MU",
+			null
+		],
+		[
+			"C:/Users/dylan/OneDrive/Documents/Qt project/Genimon/choixgenimon.cpp",
+			"MU",
+			null
+		],
+		[
+			"C:/Users/dylan/OneDrive/Documents/Qt project/Genimon/choixjoueur.cpp",
+			"MU",
+			null
+		],
+		[
 			"C:/Users/dylan/OneDrive/Documents/Qt project/Genimon/combat.cpp",
+			"MU",
+			null
+		],
+		[
+			"C:/Users/dylan/OneDrive/Documents/Qt project/Genimon/extfaculte.cpp",
+			"MU",
+			null
+		],
+		[
+			"C:/Users/dylan/OneDrive/Documents/Qt project/Genimon/genidex.cpp",
+			"MU",
+			null
+		],
+		[
+			"C:/Users/dylan/OneDrive/Documents/Qt project/Genimon/historencontre.cpp",
+			"MU",
+			null
+		],
+		[
+			"C:/Users/dylan/OneDrive/Documents/Qt project/Genimon/intfaculte.cpp",
 			"MU",
 			null
 		],
@@ -363,7 +452,17 @@
 			null
 		],
 		[
+			"C:/Users/dylan/OneDrive/Documents/Qt project/Genimon/pause.cpp",
+			"MU",
+			null
+		],
+		[
 			"C:/Users/dylan/OneDrive/Documents/Qt project/Genimon/regle.cpp",
+			"MU",
+			null
+		],
+		[
+			"C:/Users/dylan/OneDrive/Documents/Qt project/Genimon/transcombat.cpp",
 			"MU",
 			null
 		]

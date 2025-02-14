@@ -308,13 +308,31 @@ Genimon_autogen/timestamp: \
 	C:/Users/dylan/OneDrive/Documents/Qt\ project/Genimon/build/Desktop_Qt_6_7_3_MSVC2022_64bit-MinSizeRel/CMakeFiles/3.30.2/CMakeCXXCompiler.cmake \
 	C:/Users/dylan/OneDrive/Documents/Qt\ project/Genimon/build/Desktop_Qt_6_7_3_MSVC2022_64bit-MinSizeRel/CMakeFiles/3.30.2/CMakeRCCompiler.cmake \
 	C:/Users/dylan/OneDrive/Documents/Qt\ project/Genimon/build/Desktop_Qt_6_7_3_MSVC2022_64bit-MinSizeRel/CMakeFiles/3.30.2/CMakeSystem.cmake \
+	C:/Users/dylan/OneDrive/Documents/Qt\ project/Genimon/capture.cpp \
+	C:/Users/dylan/OneDrive/Documents/Qt\ project/Genimon/capture.h \
+	C:/Users/dylan/OneDrive/Documents/Qt\ project/Genimon/choixgenimon.cpp \
+	C:/Users/dylan/OneDrive/Documents/Qt\ project/Genimon/choixgenimon.h \
+	C:/Users/dylan/OneDrive/Documents/Qt\ project/Genimon/choixjoueur.cpp \
+	C:/Users/dylan/OneDrive/Documents/Qt\ project/Genimon/choixjoueur.h \
 	C:/Users/dylan/OneDrive/Documents/Qt\ project/Genimon/combat.cpp \
 	C:/Users/dylan/OneDrive/Documents/Qt\ project/Genimon/combat.h \
+	C:/Users/dylan/OneDrive/Documents/Qt\ project/Genimon/extfaculte.cpp \
+	C:/Users/dylan/OneDrive/Documents/Qt\ project/Genimon/extfaculte.h \
+	C:/Users/dylan/OneDrive/Documents/Qt\ project/Genimon/genidex.cpp \
+	C:/Users/dylan/OneDrive/Documents/Qt\ project/Genimon/genidex.h \
+	C:/Users/dylan/OneDrive/Documents/Qt\ project/Genimon/historencontre.cpp \
+	C:/Users/dylan/OneDrive/Documents/Qt\ project/Genimon/historencontre.h \
+	C:/Users/dylan/OneDrive/Documents/Qt\ project/Genimon/intfaculte.cpp \
+	C:/Users/dylan/OneDrive/Documents/Qt\ project/Genimon/intfaculte.h \
 	C:/Users/dylan/OneDrive/Documents/Qt\ project/Genimon/main.cpp \
 	C:/Users/dylan/OneDrive/Documents/Qt\ project/Genimon/mainwindow.cpp \
 	C:/Users/dylan/OneDrive/Documents/Qt\ project/Genimon/mainwindow.h \
+	C:/Users/dylan/OneDrive/Documents/Qt\ project/Genimon/pause.cpp \
+	C:/Users/dylan/OneDrive/Documents/Qt\ project/Genimon/pause.h \
 	C:/Users/dylan/OneDrive/Documents/Qt\ project/Genimon/regle.cpp \
 	C:/Users/dylan/OneDrive/Documents/Qt\ project/Genimon/regle.h \
+	C:/Users/dylan/OneDrive/Documents/Qt\ project/Genimon/transcombat.cpp \
+	C:/Users/dylan/OneDrive/Documents/Qt\ project/Genimon/transcombat.h \
 	C:/mingw64/share/cmake-3.30/Modules/CMakeCXXInformation.cmake \
 	C:/mingw64/share/cmake-3.30/Modules/CMakeCheckCompilerFlagCommonPatterns.cmake \
 	C:/mingw64/share/cmake-3.30/Modules/CMakeCommonLanguageInclude.cmake \
@@ -345,7 +363,16 @@ Genimon_autogen/timestamp: \
 	C:/mingw64/share/cmake-3.30/Modules/Platform/Windows-MSVC.cmake \
 	C:/mingw64/share/cmake-3.30/Modules/Platform/Windows.cmake \
 	C:/mingw64/share/cmake-3.30/Modules/Platform/WindowsPaths.cmake \
+	C:/Users/dylan/OneDrive/Documents/Qt\ project/Genimon/capture.ui \
+	C:/Users/dylan/OneDrive/Documents/Qt\ project/Genimon/choixgenimon.ui \
+	C:/Users/dylan/OneDrive/Documents/Qt\ project/Genimon/choixjoueur.ui \
 	C:/Users/dylan/OneDrive/Documents/Qt\ project/Genimon/combat.ui \
+	C:/Users/dylan/OneDrive/Documents/Qt\ project/Genimon/extfaculte.ui \
+	C:/Users/dylan/OneDrive/Documents/Qt\ project/Genimon/genidex.ui \
+	C:/Users/dylan/OneDrive/Documents/Qt\ project/Genimon/historencontre.ui \
+	C:/Users/dylan/OneDrive/Documents/Qt\ project/Genimon/intfaculte.ui \
 	C:/Users/dylan/OneDrive/Documents/Qt\ project/Genimon/mainwindow.ui \
+	C:/Users/dylan/OneDrive/Documents/Qt\ project/Genimon/pause.ui \
 	C:/Users/dylan/OneDrive/Documents/Qt\ project/Genimon/regle.ui \
+	C:/Users/dylan/OneDrive/Documents/Qt\ project/Genimon/transcombat.ui \
 	C:/mingw64/bin/cmake.exe

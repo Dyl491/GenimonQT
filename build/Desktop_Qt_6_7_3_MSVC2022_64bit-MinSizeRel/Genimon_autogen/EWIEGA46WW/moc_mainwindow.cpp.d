@@ -150,4 +150,6 @@ C:/Users/dylan/OneDrive/Documents/Qt\ project/Genimon/build/Desktop_Qt_6_7_3_MSV
   C:/Qt/6.7.3/msvc2022_64/include/QtWidgets/qtwidgetsexports.h \
   C:/Qt/6.7.3/msvc2022_64/include/QtWidgets/qtwidgetsglobal.h \
   C:/Qt/6.7.3/msvc2022_64/include/QtWidgets/qwidget.h \
+  C:/Users/dylan/OneDrive/Documents/Qt\ project/Genimon/choixjoueur.h \
+  C:/Users/dylan/OneDrive/Documents/Qt\ project/Genimon/extfaculte.h \
   C:/Users/dylan/OneDrive/Documents/Qt\ project/Genimon/regle.h

@@ -9,9 +9,9 @@
         <file>Image_Qt/Civil/coneOrange_test.png</file>
     </qresource>
     <qresource prefix="/Decor">
-        <file>Image_Qt/Decor/Faculte genie.png</file>
         <file>Image_Qt/Decor/AreneCombat.webp</file>
         <file>Image_Qt/Decor/Transition combat.png</file>
+        <file>Image_Qt/Decor/Faculte genie.png</file>
     </qresource>
     <qresource prefix="/MainMenu">
         <file>Image_Qt/EcranAccueil/1000_F_825549239_sad5hwkkkyoQBdFxDdeIGTZzDc0Ktlv1.jpg</file>

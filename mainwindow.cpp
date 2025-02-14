@@ -21,7 +21,14 @@ void MainWindow::on_Quitter_clicked(bool checked)
 }
 
 
-void MainWindow::on_pushButton_clicked(bool checked)
+void MainWindow::on_Start_clicked(bool checked)
+{
+    choixJoueur = new ChoixJoueur(this);
+    choixJoueur->show();
+}
+
+
+void MainWindow::on_Regle_clicked(bool checked)
 {
     regle = new Regle(this);
     regle->show();
