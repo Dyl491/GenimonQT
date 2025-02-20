@@ -21,7 +21,7 @@ class Ui_Regle
 {
 public:
     QLabel *BackGround;
-    QPushButton *pushButton;
+    QPushButton *Retour;
     QLabel *Reglement;
     QLabel *RegleTitre;
 
@@ -39,9 +39,16 @@ public:
         BackGround->setTextFormat(Qt::TextFormat::PlainText);
         BackGround->setPixmap(QPixmap(QString::fromUtf8(":/MainMenu/Image_Qt/EcranAccueil/pixel-art-sky-background-with-clouds-cloudy-blue-sky-for-8bit-game-on-white-background-vector.jpg")));
         BackGround->setScaledContents(true);
-        pushButton = new QPushButton(Regle);
-        pushButton->setObjectName("pushButton");
-        pushButton->setGeometry(QRect(565, 540, 150, 40));
+        Retour = new QPushButton(Regle);
+        Retour->setObjectName("Retour");
+        Retour->setGeometry(QRect(565, 540, 150, 40));
+        QPalette palette;
+        QBrush brush(QColor(135, 135, 135, 255));
+        brush.setStyle(Qt::SolidPattern);
+        palette.setBrush(QPalette::Active, QPalette::Button, brush);
+        palette.setBrush(QPalette::Inactive, QPalette::Button, brush);
+        palette.setBrush(QPalette::Disabled, QPalette::Button, brush);
+        Retour->setPalette(palette);
         Reglement = new QLabel(Regle);
         Reglement->setObjectName("Reglement");
         Reglement->setGeometry(QRect(490, 60, 300, 400));
@@ -60,8 +67,8 @@ public:
     {
         Regle->setWindowTitle(QCoreApplication::translate("Regle", "Form", nullptr));
         BackGround->setText(QString());
-        pushButton->setText(QCoreApplication::translate("Regle", "Retour au menu", nullptr));
-        Reglement->setText(QCoreApplication::translate("Regle", "Rule1 ...", nullptr));
+        Retour->setText(QCoreApplication::translate("Regle", "Retour au menu", nullptr));
+        Reglement->setText(QCoreApplication::translate("Regle", "Dans le jeu en g\303\251n\303\251ral, ...", nullptr));
         RegleTitre->setText(QCoreApplication::translate("Regle", "R\303\250gle du jeu", nullptr));
     } // retranslateUi
 

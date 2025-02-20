@@ -2,6 +2,7 @@
 #define COMBAT_H
 
 #include <QWidget>
+#include <QTimer>
 
 namespace Ui {
 class Combat;
@@ -17,6 +18,14 @@ public:
 
 private:
     Ui::Combat *ui;
+    QTimer *TransTimer;
+
+private slots:
+    void onTimeout();
+    void on_Attaque1_clicked(bool checked);
+    void on_Attaque2_clicked(bool checked);
+    void on_Attaque3_clicked(bool checked);
+    void on_Attaque4_clicked(bool checked);
 };
 
 #endif // COMBAT_H

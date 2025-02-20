@@ -41,7 +41,7 @@
     <enum>Qt::TextFormat::PlainText</enum>
    </property>
    <property name="pixmap">
-    <pixmap resource="Image.qrc">:/Decor/Image_Qt/Decor/Faculte genie.png</pixmap>
+    <pixmap resource="Image.qrc">:/Decor/Image_Qt/Decor/5a8.png</pixmap>
    </property>
    <property name="scaledContents">
     <bool>true</bool>

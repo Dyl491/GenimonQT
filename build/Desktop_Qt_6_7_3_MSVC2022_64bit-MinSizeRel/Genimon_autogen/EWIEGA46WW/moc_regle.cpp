@@ -36,7 +36,7 @@ namespace {
 struct qt_meta_stringdata_CLASSRegleENDCLASS_t {};
 constexpr auto qt_meta_stringdata_CLASSRegleENDCLASS = QtMocHelpers::stringData(
     "Regle",
-    "on_pushButton_clicked",
+    "on_Retour_clicked",
     "",
     "checked"
 );
@@ -76,7 +76,7 @@ Q_CONSTINIT const QMetaObject Regle::staticMetaObject = { {
     qt_incomplete_metaTypeArray<qt_meta_stringdata_CLASSRegleENDCLASS_t,
         // Q_OBJECT / Q_GADGET
         QtPrivate::TypeAndForceComplete<Regle, std::true_type>,
-        // method 'on_pushButton_clicked'
+        // method 'on_Retour_clicked'
         QtPrivate::TypeAndForceComplete<void, std::false_type>,
         QtPrivate::TypeAndForceComplete<bool, std::false_type>
     >,
@@ -89,7 +89,7 @@ void Regle::qt_static_metacall(QObject *_o, QMetaObject::Call _c, int _id, void 
         auto *_t = static_cast<Regle *>(_o);
         (void)_t;
         switch (_id) {
-        case 0: _t->on_pushButton_clicked((*reinterpret_cast< std::add_pointer_t<bool>>(_a[1]))); break;
+        case 0: _t->on_Retour_clicked((*reinterpret_cast< std::add_pointer_t<bool>>(_a[1]))); break;
         default: ;
         }
     }

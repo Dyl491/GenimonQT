@@ -16,7 +16,7 @@ ChoixJoueur::~ChoixJoueur()
 
 void ChoixJoueur::on_Continuer_clicked(bool checked)
 {
-    QString nomJoueur = ui->NomChoisi->text();
+    nomJoueur = ui->NomChoisi->text();
     //QMessageBox::information(this, "Texte Saisi", "Vous avez saisi : " + nomJoueur);
 
     extFaculte = new ExtFaculte(this);

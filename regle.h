@@ -16,7 +16,7 @@ public:
     ~Regle();
 
 private slots:
-    void on_pushButton_clicked(bool checked);
+    void on_Retour_clicked(bool checked);
 
 private:
     Ui::Regle *ui;

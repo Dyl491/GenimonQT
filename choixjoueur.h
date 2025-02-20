@@ -16,6 +16,8 @@ public:
     explicit ChoixJoueur(QWidget *parent = nullptr);
     ~ChoixJoueur();
 
+    QString nomJoueur;
+
 private slots:
     void on_Continuer_clicked(bool checked);
 

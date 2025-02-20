@@ -13,7 +13,7 @@ Regle::~Regle()
     delete ui;
 }
 
-void Regle::on_pushButton_clicked(bool checked)
+void Regle::on_Retour_clicked(bool checked)
 {
     this->hide();
     QWidget *parent = this->parentWidget();

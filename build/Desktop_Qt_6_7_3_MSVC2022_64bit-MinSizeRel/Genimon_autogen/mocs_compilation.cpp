@@ -3,6 +3,7 @@
 #include "EWIEGA46WW/moc_choixgenimon.cpp"
 #include "EWIEGA46WW/moc_choixjoueur.cpp"
 #include "EWIEGA46WW/moc_combat.cpp"
+#include "EWIEGA46WW/moc_commande.cpp"
 #include "EWIEGA46WW/moc_extfaculte.cpp"
 #include "EWIEGA46WW/moc_genidex.cpp"
 #include "EWIEGA46WW/moc_historencontre.cpp"
@@ -10,4 +11,4 @@
 #include "EWIEGA46WW/moc_mainwindow.cpp"
 #include "EWIEGA46WW/moc_pause.cpp"
 #include "EWIEGA46WW/moc_regle.cpp"
-#include "EWIEGA46WW/moc_transcombat.cpp"
+#include "EWIEGA46WW/moc_serialcommunication.cpp"
