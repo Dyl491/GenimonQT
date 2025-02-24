@@ -55,3 +55,22 @@ void SerialCommunication::onReadyRead() {
         emit dataReceived(jsonObject);  // Émettre les données pour les utiliser dans MainWindow
     }
 }
+
+void SerialCommunication::sendJsonToArduino(const QString &message, int segment) {
+    // Créer un objet JSON
+    QJsonObject jsonObject;
+    jsonObject["message"] = message;
+    jsonObject["segment"] = segment;
+
+    // Convertir l'objet JSON en QByteArray
+    QJsonDocument doc(jsonObject);
+    QByteArray jsonData = doc.toJson();
+
+    // Envoyer le message JSON via le port série
+    if (serialPort->isOpen()) {
+        serialPort->write(jsonData);
+        qDebug() << "Message envoyé à l'Arduino:" << jsonData;
+    } else {
+        qDebug() << "Erreur : Port série non ouvert.";
+    }
+}

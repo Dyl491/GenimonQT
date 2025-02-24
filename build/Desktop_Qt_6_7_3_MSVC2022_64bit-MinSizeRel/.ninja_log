@@ -1,85 +1,28 @@
 # ninja log v6
-9	149	7617151444024924	C:/Users/dylan/OneDrive/Documents/Qt project/Genimon/build/Desktop_Qt_6_7_3_MSVC2022_64bit-MinSizeRel/Genimon_autogen/mocs_compilation.cpp	9f5e77c2bd43ef29
-186	1545	7617151445776924	CMakeFiles/Genimon.dir/pause.cpp.obj	ba2d05f674aefedb
-9	149	7617151444024924	Genimon_autogen/mocs_compilation.cpp	9f5e77c2bd43ef29
-9	149	7617151444024924	Genimon_autogen/timestamp	9f5e77c2bd43ef29
-9	149	7617151444024924	C:/Users/dylan/OneDrive/Documents/Qt project/Genimon/build/Desktop_Qt_6_7_3_MSVC2022_64bit-MinSizeRel/Genimon_autogen/timestamp	9f5e77c2bd43ef29
-161	1662	7617151445527725	CMakeFiles/Genimon.dir/combat.cpp.obj	7ca9f0b51e4f5cb5
+421	3233	7617814374994551	CMakeFiles/Genimon.dir/capture.cpp.obj	146b9833287d864c
+6	461	7617138504375831	build.ninja	644b71b27a748bde
+326	4020	7617814374039802	CMakeFiles/Genimon.dir/Genimon_autogen/mocs_compilation.cpp.obj	67c6da2077cbc1cb
+138	413	7617138508394284	Genimon_autogen/EWIEGA46WW/qrc_Image.cpp	581c56de3cbf2a78
+391	3326	7617814374678945	CMakeFiles/Genimon.dir/intfaculte.cpp.obj	9752db2fbda0d0e1
+446	3276	7617814375230509	CMakeFiles/Genimon.dir/genidex.cpp.obj	9eee5db2f7a4e4fb
+382	3236	7617814374590895	CMakeFiles/Genimon.dir/extfaculte.cpp.obj	e62415dfd7f75fc1
+432	3370	7617814375087077	CMakeFiles/Genimon.dir/historencontre.cpp.obj	abb875e36f140276
+411	3125	7617814374891125	CMakeFiles/Genimon.dir/choixgenimon.cpp.obj	5d3975e7a4fb9cc1
+466	3698	7617814375437017	CMakeFiles/Genimon.dir/commande.cpp.obj	ad663ca82581f898
+138	413	7617138508394284	C:/Users/dylan/OneDrive/Documents/Qt project/Genimon/build/Desktop_Qt_6_7_3_MSVC2022_64bit-MinSizeRel/Genimon_autogen/EWIEGA46WW/qrc_Image.cpp	581c56de3cbf2a78
+861	2356	7617137868010231	CMakeFiles/Genimon.dir/serialcommunication.cpp.obj	2f2e632796aa234e
+4020	4340	7617814410988649	Genimon.exe	4d0e4777e418eed0
+5	26	7617136229340869	CMakeFiles/clean.additional	6adfc94a80c3042a
+15	325	7617814370933949	C:/Users/dylan/OneDrive/Documents/Qt project/Genimon/build/Desktop_Qt_6_7_3_MSVC2022_64bit-MinSizeRel/Genimon_autogen/mocs_compilation.cpp	9f5e77c2bd43ef29
+455	3123	7617814375324094	CMakeFiles/Genimon.dir/pause.cpp.obj	ba2d05f674aefedb
+15	325	7617814370933949	Genimon_autogen/mocs_compilation.cpp	9f5e77c2bd43ef29
+15	325	7617814370933949	Genimon_autogen/timestamp	9f5e77c2bd43ef29
+15	325	7617814370933949	C:/Users/dylan/OneDrive/Documents/Qt project/Genimon/build/Desktop_Qt_6_7_3_MSVC2022_64bit-MinSizeRel/Genimon_autogen/timestamp	9f5e77c2bd43ef29
+372	3462	7617814374492704	CMakeFiles/Genimon.dir/combat.cpp.obj	7ca9f0b51e4f5cb5
 26	33	7617136229544026	clean	d6542ab91c93f907
 459	3102	7617138509212176	CMakeFiles/Genimon.dir/Genimon_autogen/EWIEGA46WW/qrc_Image.cpp.obj	26ce95ce758dc2b4
-158	1706	7617151445492621	CMakeFiles/Genimon.dir/regle.cpp.obj	5ca2f7ee0ffa90e3
-170	1686	7617151445615405	CMakeFiles/Genimon.dir/choixjoueur.cpp.obj	31cf59570741507d
-155	1824	7617151445461992	CMakeFiles/Genimon.dir/mainwindow.cpp.obj	c116a55d725f3dc
+361	3401	7617814374380616	CMakeFiles/Genimon.dir/regle.cpp.obj	5ca2f7ee0ffa90e3
+400	3505	7617814374785096	CMakeFiles/Genimon.dir/choixjoueur.cpp.obj	31cf59570741507d
+349	3791	7617814374271705	CMakeFiles/Genimon.dir/mainwindow.cpp.obj	c116a55d725f3dc
 196	1662	7617022288672263	CMakeFiles/Genimon.dir/transcombat.cpp.obj	6791338f1d0c3d9
-153	1732	7617151445446291	CMakeFiles/Genimon.dir/main.cpp.obj	80f5ca6947335670
-5	26	7617136229340869	CMakeFiles/clean.additional	6adfc94a80c3042a
-1908	2038	7617151462989507	Genimon.exe	4d0e4777e418eed0
-861	2356	7617137868010231	CMakeFiles/Genimon.dir/serialcommunication.cpp.obj	2f2e632796aa234e
-138	413	7617138508394284	C:/Users/dylan/OneDrive/Documents/Qt project/Genimon/build/Desktop_Qt_6_7_3_MSVC2022_64bit-MinSizeRel/Genimon_autogen/EWIEGA46WW/qrc_Image.cpp	581c56de3cbf2a78
-190	1831	7617151445807868	CMakeFiles/Genimon.dir/commande.cpp.obj	ad663ca82581f898
-173	1571	7617151445640536	CMakeFiles/Genimon.dir/choixgenimon.cpp.obj	5d3975e7a4fb9cc1
-180	1611	7617151445717696	CMakeFiles/Genimon.dir/historencontre.cpp.obj	abb875e36f140276
-164	1573	7617151445559418	CMakeFiles/Genimon.dir/extfaculte.cpp.obj	e62415dfd7f75fc1
-183	1680	7617151445748550	CMakeFiles/Genimon.dir/genidex.cpp.obj	9eee5db2f7a4e4fb
-167	1665	7617151445579072	CMakeFiles/Genimon.dir/intfaculte.cpp.obj	9752db2fbda0d0e1
-138	413	7617138508394284	Genimon_autogen/EWIEGA46WW/qrc_Image.cpp	581c56de3cbf2a78
-150	1908	7617151445418904	CMakeFiles/Genimon.dir/Genimon_autogen/mocs_compilation.cpp.obj	67c6da2077cbc1cb
-6	461	7617138504375831	build.ninja	644b71b27a748bde
-177	1492	7617151445685469	CMakeFiles/Genimon.dir/capture.cpp.obj	146b9833287d864c
-9	156	7617152412498391	Genimon_autogen/timestamp	9f5e77c2bd43ef29
-9	156	7617152412498391	Genimon_autogen/mocs_compilation.cpp	9f5e77c2bd43ef29
-9	156	7617152412498391	C:/Users/dylan/OneDrive/Documents/Qt project/Genimon/build/Desktop_Qt_6_7_3_MSVC2022_64bit-MinSizeRel/Genimon_autogen/timestamp	9f5e77c2bd43ef29
-9	156	7617152412498391	C:/Users/dylan/OneDrive/Documents/Qt project/Genimon/build/Desktop_Qt_6_7_3_MSVC2022_64bit-MinSizeRel/Genimon_autogen/mocs_compilation.cpp	9f5e77c2bd43ef29
-186	1518	7617152414258074	CMakeFiles/Genimon.dir/choixgenimon.cpp.obj	5d3975e7a4fb9cc1
-189	1534	7617152414293444	CMakeFiles/Genimon.dir/capture.cpp.obj	146b9833287d864c
-195	1571	7617152414359096	CMakeFiles/Genimon.dir/genidex.cpp.obj	9eee5db2f7a4e4fb
-179	1574	7617152414185874	CMakeFiles/Genimon.dir/intfaculte.cpp.obj	9752db2fbda0d0e1
-192	1578	7617152414323745	CMakeFiles/Genimon.dir/historencontre.cpp.obj	abb875e36f140276
-166	1608	7617152414063039	CMakeFiles/Genimon.dir/regle.cpp.obj	5ca2f7ee0ffa90e3
-198	1612	7617152414389327	CMakeFiles/Genimon.dir/pause.cpp.obj	ba2d05f674aefedb
-183	1617	7617152414223650	CMakeFiles/Genimon.dir/choixjoueur.cpp.obj	31cf59570741507d
-175	1680	7617152414143427	CMakeFiles/Genimon.dir/extfaculte.cpp.obj	e62415dfd7f75fc1
-170	1705	7617152414096560	CMakeFiles/Genimon.dir/combat.cpp.obj	7ca9f0b51e4f5cb5
-160	1765	7617152413997464	CMakeFiles/Genimon.dir/main.cpp.obj	80f5ca6947335670
-202	1789	7617152414424657	CMakeFiles/Genimon.dir/commande.cpp.obj	ad663ca82581f898
-163	1857	7617152414033013	CMakeFiles/Genimon.dir/mainwindow.cpp.obj	c116a55d725f3dc
-157	1950	7617152413968655	CMakeFiles/Genimon.dir/Genimon_autogen/mocs_compilation.cpp.obj	67c6da2077cbc1cb
-1950	2080	7617152431903361	Genimon.exe	4d0e4777e418eed0
-10	157	7617152641860750	Genimon_autogen/timestamp	9f5e77c2bd43ef29
-10	157	7617152641860750	Genimon_autogen/mocs_compilation.cpp	9f5e77c2bd43ef29
-10	157	7617152641860750	C:/Users/dylan/OneDrive/Documents/Qt project/Genimon/build/Desktop_Qt_6_7_3_MSVC2022_64bit-MinSizeRel/Genimon_autogen/timestamp	9f5e77c2bd43ef29
-10	157	7617152641860750	C:/Users/dylan/OneDrive/Documents/Qt project/Genimon/build/Desktop_Qt_6_7_3_MSVC2022_64bit-MinSizeRel/Genimon_autogen/mocs_compilation.cpp	9f5e77c2bd43ef29
-187	1496	7617152643630940	CMakeFiles/Genimon.dir/capture.cpp.obj	146b9833287d864c
-196	1509	7617152643721510	CMakeFiles/Genimon.dir/pause.cpp.obj	ba2d05f674aefedb
-190	1580	7617152643661132	CMakeFiles/Genimon.dir/historencontre.cpp.obj	abb875e36f140276
-166	1593	7617152643423253	CMakeFiles/Genimon.dir/regle.cpp.obj	5ca2f7ee0ffa90e3
-193	1603	7617152643691290	CMakeFiles/Genimon.dir/genidex.cpp.obj	9eee5db2f7a4e4fb
-172	1630	7617152643488487	CMakeFiles/Genimon.dir/extfaculte.cpp.obj	e62415dfd7f75fc1
-169	1638	7617152643443324	CMakeFiles/Genimon.dir/combat.cpp.obj	7ca9f0b51e4f5cb5
-176	1645	7617152643508715	CMakeFiles/Genimon.dir/intfaculte.cpp.obj	9752db2fbda0d0e1
-184	1661	7617152643598603	CMakeFiles/Genimon.dir/choixgenimon.cpp.obj	5d3975e7a4fb9cc1
-180	1764	7617152643564869	CMakeFiles/Genimon.dir/choixjoueur.cpp.obj	31cf59570741507d
-161	1772	7617152643377308	CMakeFiles/Genimon.dir/main.cpp.obj	80f5ca6947335670
-199	1854	7617152643759261	CMakeFiles/Genimon.dir/commande.cpp.obj	ad663ca82581f898
-164	1869	7617152643397486	CMakeFiles/Genimon.dir/mainwindow.cpp.obj	c116a55d725f3dc
-158	1998	7617152643341881	CMakeFiles/Genimon.dir/Genimon_autogen/mocs_compilation.cpp.obj	67c6da2077cbc1cb
-1998	2132	7617152661736280	Genimon.exe	4d0e4777e418eed0
-9	154	7617152874152590	Genimon_autogen/timestamp	9f5e77c2bd43ef29
-9	154	7617152874152590	Genimon_autogen/mocs_compilation.cpp	9f5e77c2bd43ef29
-9	154	7617152874152590	C:/Users/dylan/OneDrive/Documents/Qt project/Genimon/build/Desktop_Qt_6_7_3_MSVC2022_64bit-MinSizeRel/Genimon_autogen/timestamp	9f5e77c2bd43ef29
-9	154	7617152874152590	C:/Users/dylan/OneDrive/Documents/Qt project/Genimon/build/Desktop_Qt_6_7_3_MSVC2022_64bit-MinSizeRel/Genimon_autogen/mocs_compilation.cpp	9f5e77c2bd43ef29
-179	1495	7617152875865319	CMakeFiles/Genimon.dir/choixgenimon.cpp.obj	5d3975e7a4fb9cc1
-182	1580	7617152875895533	CMakeFiles/Genimon.dir/capture.cpp.obj	146b9833287d864c
-173	1595	7617152875792591	CMakeFiles/Genimon.dir/intfaculte.cpp.obj	9752db2fbda0d0e1
-185	1602	7617152875925747	CMakeFiles/Genimon.dir/historencontre.cpp.obj	abb875e36f140276
-168	1621	7617152875757017	CMakeFiles/Genimon.dir/extfaculte.cpp.obj	e62415dfd7f75fc1
-192	1645	7617152875998045	CMakeFiles/Genimon.dir/pause.cpp.obj	ba2d05f674aefedb
-176	1658	7617152875829961	CMakeFiles/Genimon.dir/choixjoueur.cpp.obj	31cf59570741507d
-163	1664	7617152875696748	CMakeFiles/Genimon.dir/regle.cpp.obj	5ca2f7ee0ffa90e3
-158	1673	7617152875645938	CMakeFiles/Genimon.dir/main.cpp.obj	80f5ca6947335670
-189	1677	7617152875950920	CMakeFiles/Genimon.dir/genidex.cpp.obj	9eee5db2f7a4e4fb
-165	1703	7617152875726983	CMakeFiles/Genimon.dir/combat.cpp.obj	7ca9f0b51e4f5cb5
-160	1858	7617152875676189	CMakeFiles/Genimon.dir/mainwindow.cpp.obj	c116a55d725f3dc
-195	1863	7617152876028766	CMakeFiles/Genimon.dir/commande.cpp.obj	ad663ca82581f898
-155	1910	7617152875610301	CMakeFiles/Genimon.dir/Genimon_autogen/mocs_compilation.cpp.obj	67c6da2077cbc1cb
-1910	2045	7617152893171170	Genimon.exe	4d0e4777e418eed0
+334	3479	7617814374126659	CMakeFiles/Genimon.dir/main.cpp.obj	80f5ca6947335670

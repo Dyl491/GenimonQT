@@ -37,11 +37,11 @@ private:
     bool stateBouton3 = false;
     bool stateBouton4 = false;
     bool stateBoutonJoy = false;
-    int stateJoy = 0;   //0 = centre, 1 = est, 2 = ouest, 3 = nord, 4 = sud
-    int lastStateJoy = -1;
-    int accelX = 0;
-    int accelY = 0;
-    int accelZ = 0;
+    QString stateJoy = "default";
+    QString lastStateJoy = "default";
+    int accX = 0;
+    int accY = 0;
+    int accZ = 0;
 
 };
 

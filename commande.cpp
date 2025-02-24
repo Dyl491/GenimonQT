@@ -41,6 +41,7 @@ Commande::Commande(QWidget *parent)
 
 Commande::~Commande()
 {
+    serialComm->stopReading();
     delete serialComm;
     delete timer;
     delete ui;
@@ -60,11 +61,11 @@ void Commande::onDataReceived(QJsonObject data){
     stateBouton2 = data["button2"].toBool();
     stateBouton3 = data["button3"].toBool();
     stateBouton4 = data["button4"].toBool();
-    int stateJoy = data["joystick_position"].toInt();
-    stateBoutonJoy = data["joystick_button"].toBool();
-    accelX = data["acceleration_x"].toInt();
-    accelY = data["acceleration_y"].toInt();
-    accelZ = data["acceleration_z"].toInt();
+    stateBoutonJoy = data["bouttonJoy"].toBool();
+    stateJoy = data["JoyPosition"].toString();
+    accX = data["AccX"].toInt();
+    accY = data["AccY"].toInt();
+    accZ = data["AccZ"].toInt();
 
 }
 
@@ -102,31 +103,12 @@ void Commande::toggleState()
 
     if (stateJoy != lastStateJoy){
         lastStateJoy = stateJoy;
-        switch (stateJoy) {
-        case 0:
-            ui->ManetteJoy->setText("ÉtatJoystick : Centre");
-            break;
-        case 1:
-            ui->ManetteJoy->setText("ÉtatJoystick : Est");
-            break;
-        case 2:
-            ui->ManetteJoy->setText("ÉtatJoystick : Ouest");
-            break;
-        case 3:
-            ui->ManetteJoy->setText("ÉtatJoystick : Nord");
-            break;
-        case 4:
-            ui->ManetteJoy->setText("ÉtatJoystick : Sud");
-            break;
-        default:
-            ui->ManetteJoy->setText("ÉtatJoystick : Inconnu");
-            break;
-        }
+        ui->AccelX->setText(QString("ÉtatJoystick : %1").arg(stateJoy));
     }
 
-    ui->AccelX->setText(QString("Accel_X : %1").arg(accelX));
-    ui->AccelY->setText(QString("Accel_Y : %1").arg(accelY));
-    ui->AccelZ->setText(QString("Accel_Z : %1").arg(accelZ));
+    ui->AccelX->setText(QString("Accel_X : %1").arg(accX));
+    ui->AccelY->setText(QString("Accel_Y : %1").arg(accY));
+    ui->AccelZ->setText(QString("Accel_Z : %1").arg(accZ));
 
 }
 
@@ -135,22 +117,27 @@ void Commande::keyPressEvent(QKeyEvent *event)
     // Lorsqu'une touche est pressée, changer la couleur en vert
     if (event->key() == Qt::Key_W) {
         ui->ClavierW->setStyleSheet("background-color: green;");
+        serialComm->sendJsonToArduino("Touche W pressée", 1);
     }
 
     if (event->key() == Qt::Key_A) {
         ui->ClavierA->setStyleSheet("background-color: green;");
+        serialComm->sendJsonToArduino("Touche A pressée", 2);
     }
 
     if (event->key() == Qt::Key_D) {
         ui->ClavierD->setStyleSheet("background-color: green;");
+        serialComm->sendJsonToArduino("Touche D pressée", 3);
     }
 
     if (event->key() == Qt::Key_S) {
         ui->ClavierS->setStyleSheet("background-color: green;");
+        serialComm->sendJsonToArduino("Touche S pressée", 4);
     }
 
     if (event->key() == Qt::Key_H) {
         ui->ClavierH->setStyleSheet("background-color: green;");
+        serialComm->sendJsonToArduino("Touche H pressée", 5);
     }
 }
 
@@ -176,4 +163,5 @@ void Commande::keyReleaseEvent(QKeyEvent *event)
     if (event->key() == Qt::Key_H) {
         ui->ClavierH->setStyleSheet("background-color: red;");
     }
+    serialComm->sendJsonToArduino("Rien ne se passe", 0);
 }

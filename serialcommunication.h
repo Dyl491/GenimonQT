@@ -16,6 +16,7 @@ public:
     void connectToArduino();
     void startReading();
     void stopReading();
+    void sendJsonToArduino(const QString &message, int segment);
 
 signals:
     void dataReceived(QJsonObject data);  // Signal pour envoyer les données à MainWindow
