@@ -94,16 +94,7 @@ build CMakeFiles\Genimon.dir\combat.cpp.obj: CXX_COMPILER__Genimon_unscanned_Min
   TARGET_COMPILE_PDB = CMakeFiles\Genimon.dir\
   TARGET_PDB = Genimon.pdb
 
-build CMakeFiles\Genimon.dir\extfaculte.cpp.obj: CXX_COMPILER__Genimon_unscanned_MinSizeRel C$:\Users\dylan\OneDrive\Documents\Qt$ project\Genimon\extfaculte.cpp || cmake_object_order_depends_target_Genimon
-  DEFINES = -DQT_CORE_LIB -DQT_GUI_LIB -DQT_NO_DEBUG -DQT_SERIALPORT_LIB -DQT_WIDGETS_LIB -DUNICODE -DWIN32 -DWIN64 -D_ENABLE_EXTENDED_ALIGNED_STORAGE -D_UNICODE -D_WIN64
-  FLAGS = /DWIN32 /D_WINDOWS /GR /EHsc /O1 /Ob1 /DNDEBUG -std:c++17 -MD -Zc:__cplusplus -permissive- -utf-8
-  INCLUDES = -I"C:\Users\dylan\OneDrive\Documents\Qt project\Genimon\build\Desktop_Qt_6_7_3_MSVC2022_64bit-MinSizeRel\Genimon_autogen\include" -external:IC:\Qt\6.7.3\msvc2022_64\include\QtCore -external:IC:\Qt\6.7.3\msvc2022_64\include -external:IC:\Qt\6.7.3\msvc2022_64\mkspecs\win32-msvc -external:IC:\Qt\6.7.3\msvc2022_64\include\QtWidgets -external:IC:\Qt\6.7.3\msvc2022_64\include\QtGui -external:IC:\Qt\6.7.3\msvc2022_64\include\QtSerialPort -external:W0
-  OBJECT_DIR = CMakeFiles\Genimon.dir
-  OBJECT_FILE_DIR = CMakeFiles\Genimon.dir
-  TARGET_COMPILE_PDB = CMakeFiles\Genimon.dir\
-  TARGET_PDB = Genimon.pdb
-
-build CMakeFiles\Genimon.dir\intfaculte.cpp.obj: CXX_COMPILER__Genimon_unscanned_MinSizeRel C$:\Users\dylan\OneDrive\Documents\Qt$ project\Genimon\intfaculte.cpp || cmake_object_order_depends_target_Genimon
+build CMakeFiles\Genimon.dir\Map.cpp.obj: CXX_COMPILER__Genimon_unscanned_MinSizeRel C$:\Users\dylan\OneDrive\Documents\Qt$ project\Genimon\Map.cpp || cmake_object_order_depends_target_Genimon
   DEFINES = -DQT_CORE_LIB -DQT_GUI_LIB -DQT_NO_DEBUG -DQT_SERIALPORT_LIB -DQT_WIDGETS_LIB -DUNICODE -DWIN32 -DWIN64 -D_ENABLE_EXTENDED_ALIGNED_STORAGE -D_UNICODE -D_WIN64
   FLAGS = /DWIN32 /D_WINDOWS /GR /EHsc /O1 /Ob1 /DNDEBUG -std:c++17 -MD -Zc:__cplusplus -permissive- -utf-8
   INCLUDES = -I"C:\Users\dylan\OneDrive\Documents\Qt project\Genimon\build\Desktop_Qt_6_7_3_MSVC2022_64bit-MinSizeRel\Genimon_autogen\include" -external:IC:\Qt\6.7.3\msvc2022_64\include\QtCore -external:IC:\Qt\6.7.3\msvc2022_64\include -external:IC:\Qt\6.7.3\msvc2022_64\mkspecs\win32-msvc -external:IC:\Qt\6.7.3\msvc2022_64\include\QtWidgets -external:IC:\Qt\6.7.3\msvc2022_64\include\QtGui -external:IC:\Qt\6.7.3\msvc2022_64\include\QtSerialPort -external:W0
@@ -157,15 +148,6 @@ build CMakeFiles\Genimon.dir\genidex.cpp.obj: CXX_COMPILER__Genimon_unscanned_Mi
   TARGET_COMPILE_PDB = CMakeFiles\Genimon.dir\
   TARGET_PDB = Genimon.pdb
 
-build CMakeFiles\Genimon.dir\pause.cpp.obj: CXX_COMPILER__Genimon_unscanned_MinSizeRel C$:\Users\dylan\OneDrive\Documents\Qt$ project\Genimon\pause.cpp || cmake_object_order_depends_target_Genimon
-  DEFINES = -DQT_CORE_LIB -DQT_GUI_LIB -DQT_NO_DEBUG -DQT_SERIALPORT_LIB -DQT_WIDGETS_LIB -DUNICODE -DWIN32 -DWIN64 -D_ENABLE_EXTENDED_ALIGNED_STORAGE -D_UNICODE -D_WIN64
-  FLAGS = /DWIN32 /D_WINDOWS /GR /EHsc /O1 /Ob1 /DNDEBUG -std:c++17 -MD -Zc:__cplusplus -permissive- -utf-8
-  INCLUDES = -I"C:\Users\dylan\OneDrive\Documents\Qt project\Genimon\build\Desktop_Qt_6_7_3_MSVC2022_64bit-MinSizeRel\Genimon_autogen\include" -external:IC:\Qt\6.7.3\msvc2022_64\include\QtCore -external:IC:\Qt\6.7.3\msvc2022_64\include -external:IC:\Qt\6.7.3\msvc2022_64\mkspecs\win32-msvc -external:IC:\Qt\6.7.3\msvc2022_64\include\QtWidgets -external:IC:\Qt\6.7.3\msvc2022_64\include\QtGui -external:IC:\Qt\6.7.3\msvc2022_64\include\QtSerialPort -external:W0
-  OBJECT_DIR = CMakeFiles\Genimon.dir
-  OBJECT_FILE_DIR = CMakeFiles\Genimon.dir
-  TARGET_COMPILE_PDB = CMakeFiles\Genimon.dir\
-  TARGET_PDB = Genimon.pdb
-
 build CMakeFiles\Genimon.dir\serialcommunication.cpp.obj: CXX_COMPILER__Genimon_unscanned_MinSizeRel C$:\Users\dylan\OneDrive\Documents\Qt$ project\Genimon\serialcommunication.cpp || cmake_object_order_depends_target_Genimon
   DEFINES = -DQT_CORE_LIB -DQT_GUI_LIB -DQT_NO_DEBUG -DQT_SERIALPORT_LIB -DQT_WIDGETS_LIB -DUNICODE -DWIN32 -DWIN64 -D_ENABLE_EXTENDED_ALIGNED_STORAGE -D_UNICODE -D_WIN64
   FLAGS = /DWIN32 /D_WINDOWS /GR /EHsc /O1 /Ob1 /DNDEBUG -std:c++17 -MD -Zc:__cplusplus -permissive- -utf-8
@@ -201,7 +183,7 @@ build CMakeFiles\Genimon.dir\Genimon_autogen\EWIEGA46WW\qrc_Image.cpp.obj: CXX_C
 #############################################
 # Link the executable Genimon.exe
 
-build Genimon.exe: CXX_EXECUTABLE_LINKER__Genimon_MinSizeRel CMakeFiles\Genimon.dir\Genimon_autogen\mocs_compilation.cpp.obj CMakeFiles\Genimon.dir\main.cpp.obj CMakeFiles\Genimon.dir\mainwindow.cpp.obj CMakeFiles\Genimon.dir\regle.cpp.obj CMakeFiles\Genimon.dir\combat.cpp.obj CMakeFiles\Genimon.dir\extfaculte.cpp.obj CMakeFiles\Genimon.dir\intfaculte.cpp.obj CMakeFiles\Genimon.dir\choixjoueur.cpp.obj CMakeFiles\Genimon.dir\choixgenimon.cpp.obj CMakeFiles\Genimon.dir\capture.cpp.obj CMakeFiles\Genimon.dir\historencontre.cpp.obj CMakeFiles\Genimon.dir\genidex.cpp.obj CMakeFiles\Genimon.dir\pause.cpp.obj CMakeFiles\Genimon.dir\serialcommunication.cpp.obj CMakeFiles\Genimon.dir\commande.cpp.obj CMakeFiles\Genimon.dir\Genimon_autogen\EWIEGA46WW\qrc_Image.cpp.obj | C$:\Qt\6.7.3\msvc2022_64\lib\Qt6Widgets.lib C$:\Qt\6.7.3\msvc2022_64\lib\Qt6Gui.lib C$:\Qt\6.7.3\msvc2022_64\lib\Qt6SerialPort.lib C$:\Qt\6.7.3\msvc2022_64\lib\Qt6Core.lib C$:\Qt\6.7.3\msvc2022_64\lib\Qt6EntryPoint.lib || Genimon_autogen Genimon_autogen_timestamp_deps
+build Genimon.exe: CXX_EXECUTABLE_LINKER__Genimon_MinSizeRel CMakeFiles\Genimon.dir\Genimon_autogen\mocs_compilation.cpp.obj CMakeFiles\Genimon.dir\main.cpp.obj CMakeFiles\Genimon.dir\mainwindow.cpp.obj CMakeFiles\Genimon.dir\regle.cpp.obj CMakeFiles\Genimon.dir\combat.cpp.obj CMakeFiles\Genimon.dir\Map.cpp.obj CMakeFiles\Genimon.dir\choixjoueur.cpp.obj CMakeFiles\Genimon.dir\choixgenimon.cpp.obj CMakeFiles\Genimon.dir\capture.cpp.obj CMakeFiles\Genimon.dir\historencontre.cpp.obj CMakeFiles\Genimon.dir\genidex.cpp.obj CMakeFiles\Genimon.dir\serialcommunication.cpp.obj CMakeFiles\Genimon.dir\commande.cpp.obj CMakeFiles\Genimon.dir\Genimon_autogen\EWIEGA46WW\qrc_Image.cpp.obj | C$:\Qt\6.7.3\msvc2022_64\lib\Qt6Widgets.lib C$:\Qt\6.7.3\msvc2022_64\lib\Qt6Gui.lib C$:\Qt\6.7.3\msvc2022_64\lib\Qt6SerialPort.lib C$:\Qt\6.7.3\msvc2022_64\lib\Qt6Core.lib C$:\Qt\6.7.3\msvc2022_64\lib\Qt6EntryPoint.lib || Genimon_autogen Genimon_autogen_timestamp_deps
   FLAGS = /DWIN32 /D_WINDOWS /GR /EHsc /O1 /Ob1 /DNDEBUG -MD
   LINK_FLAGS = /machine:x64 /INCREMENTAL:NO /subsystem:windows
   LINK_LIBRARIES = C:\Qt\6.7.3\msvc2022_64\lib\Qt6Widgets.lib  C:\Qt\6.7.3\msvc2022_64\lib\Qt6Gui.lib  C:\Qt\6.7.3\msvc2022_64\lib\Qt6SerialPort.lib  d3d11.lib  dxgi.lib  dxguid.lib  d3d12.lib  C:\Qt\6.7.3\msvc2022_64\lib\Qt6Core.lib  mpr.lib  userenv.lib  C:\Qt\6.7.3\msvc2022_64\lib\Qt6EntryPoint.lib  shell32.lib  kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib
@@ -276,7 +258,7 @@ build Genimon_autogen_timestamp_deps: phony
 #############################################
 # Utility command for Genimon_autogen
 
-build Genimon_autogen: phony CMakeFiles\Genimon_autogen Genimon_autogen\include\ui_mainwindow.h Genimon_autogen\include\ui_regle.h Genimon_autogen\include\ui_combat.h Genimon_autogen\include\ui_extfaculte.h Genimon_autogen\include\ui_intfaculte.h Genimon_autogen\include\ui_choixjoueur.h Genimon_autogen\include\ui_choixgenimon.h Genimon_autogen\include\ui_capture.h Genimon_autogen\include\ui_historencontre.h Genimon_autogen\include\ui_genidex.h Genimon_autogen\include\ui_pause.h Genimon_autogen\include\ui_commande.h Genimon_autogen\timestamp Genimon_autogen\mocs_compilation.cpp Genimon_autogen_timestamp_deps
+build Genimon_autogen: phony CMakeFiles\Genimon_autogen Genimon_autogen\include\ui_mainwindow.h Genimon_autogen\include\ui_regle.h Genimon_autogen\include\ui_combat.h Genimon_autogen\include\ui_Map.h Genimon_autogen\include\ui_choixjoueur.h Genimon_autogen\include\ui_choixgenimon.h Genimon_autogen\include\ui_capture.h Genimon_autogen\include\ui_historencontre.h Genimon_autogen\include\ui_genidex.h Genimon_autogen\include\ui_commande.h Genimon_autogen\timestamp Genimon_autogen\mocs_compilation.cpp Genimon_autogen_timestamp_deps
 
 
 #############################################
@@ -302,7 +284,7 @@ build Genimon_autogen\EWIEGA46WW\qrc_Image.cpp | ${cmake_ninja_workdir}Genimon_a
 #############################################
 # Phony custom command for CMakeFiles\Genimon_autogen
 
-build CMakeFiles\Genimon_autogen Genimon_autogen\include\ui_mainwindow.h Genimon_autogen\include\ui_regle.h Genimon_autogen\include\ui_combat.h Genimon_autogen\include\ui_extfaculte.h Genimon_autogen\include\ui_intfaculte.h Genimon_autogen\include\ui_choixjoueur.h Genimon_autogen\include\ui_choixgenimon.h Genimon_autogen\include\ui_capture.h Genimon_autogen\include\ui_historencontre.h Genimon_autogen\include\ui_genidex.h Genimon_autogen\include\ui_pause.h Genimon_autogen\include\ui_commande.h | ${cmake_ninja_workdir}CMakeFiles\Genimon_autogen ${cmake_ninja_workdir}Genimon_autogen\include\ui_mainwindow.h ${cmake_ninja_workdir}Genimon_autogen\include\ui_regle.h ${cmake_ninja_workdir}Genimon_autogen\include\ui_combat.h ${cmake_ninja_workdir}Genimon_autogen\include\ui_extfaculte.h ${cmake_ninja_workdir}Genimon_autogen\include\ui_intfaculte.h ${cmake_ninja_workdir}Genimon_autogen\include\ui_choixjoueur.h ${cmake_ninja_workdir}Genimon_autogen\include\ui_choixgenimon.h ${cmake_ninja_workdir}Genimon_autogen\include\ui_capture.h ${cmake_ninja_workdir}Genimon_autogen\include\ui_historencontre.h ${cmake_ninja_workdir}Genimon_autogen\include\ui_genidex.h ${cmake_ninja_workdir}Genimon_autogen\include\ui_pause.h ${cmake_ninja_workdir}Genimon_autogen\include\ui_commande.h: phony Genimon_autogen\timestamp || Genimon_autogen_timestamp_deps
+build CMakeFiles\Genimon_autogen Genimon_autogen\include\ui_mainwindow.h Genimon_autogen\include\ui_regle.h Genimon_autogen\include\ui_combat.h Genimon_autogen\include\ui_Map.h Genimon_autogen\include\ui_choixjoueur.h Genimon_autogen\include\ui_choixgenimon.h Genimon_autogen\include\ui_capture.h Genimon_autogen\include\ui_historencontre.h Genimon_autogen\include\ui_genidex.h Genimon_autogen\include\ui_commande.h | ${cmake_ninja_workdir}CMakeFiles\Genimon_autogen ${cmake_ninja_workdir}Genimon_autogen\include\ui_mainwindow.h ${cmake_ninja_workdir}Genimon_autogen\include\ui_regle.h ${cmake_ninja_workdir}Genimon_autogen\include\ui_combat.h ${cmake_ninja_workdir}Genimon_autogen\include\ui_Map.h ${cmake_ninja_workdir}Genimon_autogen\include\ui_choixjoueur.h ${cmake_ninja_workdir}Genimon_autogen\include\ui_choixgenimon.h ${cmake_ninja_workdir}Genimon_autogen\include\ui_capture.h ${cmake_ninja_workdir}Genimon_autogen\include\ui_historencontre.h ${cmake_ninja_workdir}Genimon_autogen\include\ui_genidex.h ${cmake_ninja_workdir}Genimon_autogen\include\ui_commande.h: phony Genimon_autogen\timestamp || Genimon_autogen_timestamp_deps
 
 # =============================================================================
 # Target aliases.

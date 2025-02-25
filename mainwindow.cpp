@@ -13,13 +13,11 @@ MainWindow::MainWindow(QWidget *parent)
         ui->Combat->setVisible(true);
         ui->Genidex->setVisible(true);
         ui->Historencontre->setVisible(true);
-        ui->Pause->setVisible(true);
     }else{
         ui->Capture->setVisible(false);
         ui->Combat->setVisible(false);
         ui->Genidex->setVisible(false);
         ui->Historencontre->setVisible(false);
-        ui->Pause->setVisible(false);
     }
 }
 
@@ -38,7 +36,9 @@ void MainWindow::on_Quitter_clicked(bool checked)
 
 void MainWindow::on_Start_clicked(bool checked)
 {
-    choixJoueur = new ChoixJoueur(this);
+    Map* map = new Map(this);
+    ChoixJoueur *choixJoueur = new ChoixJoueur(map, this);
+    connect(choixJoueur, &ChoixJoueur::retourMainWindow, this, &MainWindow::show);
     choixJoueur->show();
 }
 
@@ -82,12 +82,5 @@ void MainWindow::on_Historencontre_clicked(bool checked)
 {
     historencontre = new HistoRencontre(this);
     historencontre->show();
-}
-
-
-void MainWindow::on_Pause_clicked(bool checked)
-{
-    pause = new Pause(this);
-    pause->show();
 }
 

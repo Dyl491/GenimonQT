@@ -9,7 +9,6 @@
 #include "combat.h"
 #include "genidex.h"
 #include "historencontre.h"
-#include "pause.h"
 
 QT_BEGIN_NAMESPACE
 namespace Ui {
@@ -42,12 +41,9 @@ private slots:
 
     void on_Historencontre_clicked(bool checked);
 
-    void on_Pause_clicked(bool checked);
-
 private:
     Ui::MainWindow *ui;
     Regle *regle;
-    ChoixJoueur *choixJoueur;
     Commande *commande;
 
     //Pour test
@@ -55,7 +51,6 @@ private:
     Combat *combat;
     Genidex *genidex;
     HistoRencontre *historencontre;
-    Pause *pause;
 
 };
 #endif // MAINWINDOW_H

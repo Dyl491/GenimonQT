@@ -33,7 +33,6 @@ public:
     QPushButton *Combat;
     QPushButton *Genidex;
     QPushButton *Historencontre;
-    QPushButton *Pause;
     QPushButton *Capture;
 
     void setupUi(QMainWindow *MainWindow)
@@ -213,9 +212,9 @@ public:
         Historencontre->setAutoFillBackground(false);
         Historencontre->setIconSize(QSize(20, 20));
         Historencontre->setCheckable(false);
-        Pause = new QPushButton(centralwidget);
-        Pause->setObjectName("Pause");
-        Pause->setGeometry(QRect(1010, 600, 150, 40));
+        Capture = new QPushButton(centralwidget);
+        Capture->setObjectName("Capture");
+        Capture->setGeometry(QRect(1010, 360, 150, 40));
         QPalette palette9;
         palette9.setBrush(QPalette::Active, QPalette::Button, brush);
         palette9.setBrush(QPalette::Active, QPalette::Light, brush1);
@@ -226,25 +225,7 @@ public:
         palette9.setBrush(QPalette::Disabled, QPalette::Button, brush);
         palette9.setBrush(QPalette::Disabled, QPalette::Light, brush1);
         palette9.setBrush(QPalette::Disabled, QPalette::Midlight, brush2);
-        Pause->setPalette(palette9);
-        Pause->setMouseTracking(false);
-        Pause->setAutoFillBackground(false);
-        Pause->setIconSize(QSize(20, 20));
-        Pause->setCheckable(false);
-        Capture = new QPushButton(centralwidget);
-        Capture->setObjectName("Capture");
-        Capture->setGeometry(QRect(1010, 360, 150, 40));
-        QPalette palette10;
-        palette10.setBrush(QPalette::Active, QPalette::Button, brush);
-        palette10.setBrush(QPalette::Active, QPalette::Light, brush1);
-        palette10.setBrush(QPalette::Active, QPalette::Midlight, brush2);
-        palette10.setBrush(QPalette::Inactive, QPalette::Button, brush);
-        palette10.setBrush(QPalette::Inactive, QPalette::Light, brush1);
-        palette10.setBrush(QPalette::Inactive, QPalette::Midlight, brush2);
-        palette10.setBrush(QPalette::Disabled, QPalette::Button, brush);
-        palette10.setBrush(QPalette::Disabled, QPalette::Light, brush1);
-        palette10.setBrush(QPalette::Disabled, QPalette::Midlight, brush2);
-        Capture->setPalette(palette10);
+        Capture->setPalette(palette9);
         Capture->setMouseTracking(false);
         Capture->setAutoFillBackground(false);
         Capture->setIconSize(QSize(20, 20));
@@ -276,7 +257,6 @@ public:
         Combat->setText(QCoreApplication::translate("MainWindow", "Combat", nullptr));
         Genidex->setText(QCoreApplication::translate("MainWindow", "Genidex", nullptr));
         Historencontre->setText(QCoreApplication::translate("MainWindow", "HistoRencon", nullptr));
-        Pause->setText(QCoreApplication::translate("MainWindow", "Pause", nullptr));
         Capture->setText(QCoreApplication::translate("MainWindow", "Capture", nullptr));
     } // retranslateUi
 

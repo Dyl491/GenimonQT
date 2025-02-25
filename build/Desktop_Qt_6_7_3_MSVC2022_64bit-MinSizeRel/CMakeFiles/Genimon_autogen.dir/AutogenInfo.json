@@ -307,6 +307,12 @@
 	"HEADERS" : 
 	[
 		[
+			"C:/Users/dylan/OneDrive/Documents/Qt project/Genimon/Map.h",
+			"MU",
+			"EWIEGA46WW/moc_Map.cpp",
+			null
+		],
+		[
 			"C:/Users/dylan/OneDrive/Documents/Qt project/Genimon/capture.h",
 			"MU",
 			"EWIEGA46WW/moc_capture.cpp",
@@ -337,12 +343,6 @@
 			null
 		],
 		[
-			"C:/Users/dylan/OneDrive/Documents/Qt project/Genimon/extfaculte.h",
-			"MU",
-			"EWIEGA46WW/moc_extfaculte.cpp",
-			null
-		],
-		[
 			"C:/Users/dylan/OneDrive/Documents/Qt project/Genimon/genidex.h",
 			"MU",
 			"EWIEGA46WW/moc_genidex.cpp",
@@ -355,21 +355,9 @@
 			null
 		],
 		[
-			"C:/Users/dylan/OneDrive/Documents/Qt project/Genimon/intfaculte.h",
-			"MU",
-			"EWIEGA46WW/moc_intfaculte.cpp",
-			null
-		],
-		[
 			"C:/Users/dylan/OneDrive/Documents/Qt project/Genimon/mainwindow.h",
 			"MU",
 			"EWIEGA46WW/moc_mainwindow.cpp",
-			null
-		],
-		[
-			"C:/Users/dylan/OneDrive/Documents/Qt project/Genimon/pause.h",
-			"MU",
-			"EWIEGA46WW/moc_pause.cpp",
 			null
 		],
 		[
@@ -444,6 +432,11 @@
 	"SOURCES" : 
 	[
 		[
+			"C:/Users/dylan/OneDrive/Documents/Qt project/Genimon/Map.cpp",
+			"MU",
+			null
+		],
+		[
 			"C:/Users/dylan/OneDrive/Documents/Qt project/Genimon/capture.cpp",
 			"MU",
 			null
@@ -469,11 +462,6 @@
 			null
 		],
 		[
-			"C:/Users/dylan/OneDrive/Documents/Qt project/Genimon/extfaculte.cpp",
-			"MU",
-			null
-		],
-		[
 			"C:/Users/dylan/OneDrive/Documents/Qt project/Genimon/genidex.cpp",
 			"MU",
 			null
@@ -484,22 +472,12 @@
 			null
 		],
 		[
-			"C:/Users/dylan/OneDrive/Documents/Qt project/Genimon/intfaculte.cpp",
-			"MU",
-			null
-		],
-		[
 			"C:/Users/dylan/OneDrive/Documents/Qt project/Genimon/main.cpp",
 			"MU",
 			null
 		],
 		[
 			"C:/Users/dylan/OneDrive/Documents/Qt project/Genimon/mainwindow.cpp",
-			"MU",
-			null
-		],
-		[
-			"C:/Users/dylan/OneDrive/Documents/Qt project/Genimon/pause.cpp",
 			"MU",
 			null
 		],

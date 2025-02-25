@@ -19,7 +19,7 @@ Genidex::Genidex(QWidget *parent)
     // Créer un timer pour la boucle régulière
     timer = new QTimer(this);
     connect(timer, &QTimer::timeout, this, &Genidex::main);
-    timer->start(300);  // Le timer s'exécute toutes les 300 ms
+    timer->start(250);  // Le timer s'exécute toutes les 250 ms
 
     showListGenimon();
     highlight();
@@ -107,7 +107,7 @@ void Genidex::keyReleaseEvent(QKeyEvent *event)
     }
 }
 //****************************************************************************
-
+//Fonction
 
 void Genidex::showGenimon()
 {
@@ -205,7 +205,8 @@ void Genidex::highlight()
     }
 }
 
-
+//****************************************************************************
+//Main
 
 void Genidex::main()
 {
@@ -234,7 +235,11 @@ void Genidex::main()
         showListGenimon();
     }
 
-    if ((stateBouton1 || ClavierW) && selectionGenimon > 3)
+
+    if ((stateBouton2 || ClavierEsc) && etat ==0 && selectionGenimon ==0)
+    {
+        this->hide();
+    }else if ((stateBouton1 || ClavierW) && selectionGenimon > 3)
     {
         selectionGenimon = selectionGenimon -4;
         highlight();
@@ -259,6 +264,7 @@ void Genidex::main()
         etat =0;
         showListGenimon();
     }
+
 
 }
 

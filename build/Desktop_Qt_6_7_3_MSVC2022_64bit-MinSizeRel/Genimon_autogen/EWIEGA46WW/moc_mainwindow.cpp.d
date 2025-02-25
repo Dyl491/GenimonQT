@@ -189,22 +189,30 @@ C:/Users/dylan/OneDrive/Documents/Qt\ project/Genimon/build/Desktop_Qt_6_7_3_MSV
   C:/Qt/6.7.3/msvc2022_64/include/QtSerialPort/qserialport.h \
   C:/Qt/6.7.3/msvc2022_64/include/QtSerialPort/qserialportglobal.h \
   C:/Qt/6.7.3/msvc2022_64/include/QtSerialPort/qtserialportexports.h \
+  C:/Qt/6.7.3/msvc2022_64/include/QtWidgets/QLayout \
   C:/Qt/6.7.3/msvc2022_64/include/QtWidgets/QMainWindow \
+  C:/Qt/6.7.3/msvc2022_64/include/QtWidgets/QPushButton \
+  C:/Qt/6.7.3/msvc2022_64/include/QtWidgets/QVBoxLayout \
   C:/Qt/6.7.3/msvc2022_64/include/QtWidgets/QWidget \
+  C:/Qt/6.7.3/msvc2022_64/include/QtWidgets/qabstractbutton.h \
+  C:/Qt/6.7.3/msvc2022_64/include/QtWidgets/qboxlayout.h \
+  C:/Qt/6.7.3/msvc2022_64/include/QtWidgets/qgridlayout.h \
+  C:/Qt/6.7.3/msvc2022_64/include/QtWidgets/qlayout.h \
+  C:/Qt/6.7.3/msvc2022_64/include/QtWidgets/qlayoutitem.h \
   C:/Qt/6.7.3/msvc2022_64/include/QtWidgets/qmainwindow.h \
+  C:/Qt/6.7.3/msvc2022_64/include/QtWidgets/qpushbutton.h \
   C:/Qt/6.7.3/msvc2022_64/include/QtWidgets/qsizepolicy.h \
   C:/Qt/6.7.3/msvc2022_64/include/QtWidgets/qtabwidget.h \
   C:/Qt/6.7.3/msvc2022_64/include/QtWidgets/qtwidgets-config.h \
   C:/Qt/6.7.3/msvc2022_64/include/QtWidgets/qtwidgetsexports.h \
   C:/Qt/6.7.3/msvc2022_64/include/QtWidgets/qtwidgetsglobal.h \
   C:/Qt/6.7.3/msvc2022_64/include/QtWidgets/qwidget.h \
+  C:/Users/dylan/OneDrive/Documents/Qt\ project/Genimon/Map.h \
   C:/Users/dylan/OneDrive/Documents/Qt\ project/Genimon/capture.h \
   C:/Users/dylan/OneDrive/Documents/Qt\ project/Genimon/choixjoueur.h \
   C:/Users/dylan/OneDrive/Documents/Qt\ project/Genimon/combat.h \
   C:/Users/dylan/OneDrive/Documents/Qt\ project/Genimon/commande.h \
-  C:/Users/dylan/OneDrive/Documents/Qt\ project/Genimon/extfaculte.h \
   C:/Users/dylan/OneDrive/Documents/Qt\ project/Genimon/genidex.h \
   C:/Users/dylan/OneDrive/Documents/Qt\ project/Genimon/historencontre.h \
-  C:/Users/dylan/OneDrive/Documents/Qt\ project/Genimon/pause.h \
   C:/Users/dylan/OneDrive/Documents/Qt\ project/Genimon/regle.h \
   C:/Users/dylan/OneDrive/Documents/Qt\ project/Genimon/serialcommunication.h

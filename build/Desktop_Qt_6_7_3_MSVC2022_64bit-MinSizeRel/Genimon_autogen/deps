@@ -189,9 +189,18 @@ Genimon_autogen/timestamp: \
 	C:/Qt/6.7.3/msvc2022_64/include/QtSerialPort/qserialport.h \
 	C:/Qt/6.7.3/msvc2022_64/include/QtSerialPort/qserialportglobal.h \
 	C:/Qt/6.7.3/msvc2022_64/include/QtSerialPort/qtserialportexports.h \
+	C:/Qt/6.7.3/msvc2022_64/include/QtWidgets/QLayout \
 	C:/Qt/6.7.3/msvc2022_64/include/QtWidgets/QMainWindow \
+	C:/Qt/6.7.3/msvc2022_64/include/QtWidgets/QPushButton \
+	C:/Qt/6.7.3/msvc2022_64/include/QtWidgets/QVBoxLayout \
 	C:/Qt/6.7.3/msvc2022_64/include/QtWidgets/QWidget \
+	C:/Qt/6.7.3/msvc2022_64/include/QtWidgets/qabstractbutton.h \
+	C:/Qt/6.7.3/msvc2022_64/include/QtWidgets/qboxlayout.h \
+	C:/Qt/6.7.3/msvc2022_64/include/QtWidgets/qgridlayout.h \
+	C:/Qt/6.7.3/msvc2022_64/include/QtWidgets/qlayout.h \
+	C:/Qt/6.7.3/msvc2022_64/include/QtWidgets/qlayoutitem.h \
 	C:/Qt/6.7.3/msvc2022_64/include/QtWidgets/qmainwindow.h \
+	C:/Qt/6.7.3/msvc2022_64/include/QtWidgets/qpushbutton.h \
 	C:/Qt/6.7.3/msvc2022_64/include/QtWidgets/qsizepolicy.h \
 	C:/Qt/6.7.3/msvc2022_64/include/QtWidgets/qtabwidget.h \
 	C:/Qt/6.7.3/msvc2022_64/include/QtWidgets/qtwidgets-config.h \
@@ -361,6 +370,8 @@ Genimon_autogen/timestamp: \
 	C:/Qt/6.7.3/msvc2022_64/lib/cmake/Qt6ZlibPrivate/Qt6ZlibPrivateVersionlessTargets.cmake \
 	C:/Users/dylan/OneDrive/Documents/Qt\ project/Genimon/CMakeLists.txt \
 	C:/Users/dylan/OneDrive/Documents/Qt\ project/Genimon/Image.qrc \
+	C:/Users/dylan/OneDrive/Documents/Qt\ project/Genimon/Map.cpp \
+	C:/Users/dylan/OneDrive/Documents/Qt\ project/Genimon/Map.h \
 	C:/Users/dylan/OneDrive/Documents/Qt\ project/Genimon/build/Desktop_Qt_6_7_3_MSVC2022_64bit-MinSizeRel/.qtc/package-manager/auto-setup.cmake \
 	C:/Users/dylan/OneDrive/Documents/Qt\ project/Genimon/build/Desktop_Qt_6_7_3_MSVC2022_64bit-MinSizeRel/CMakeFiles/3.30.2/CMakeCXXCompiler.cmake \
 	C:/Users/dylan/OneDrive/Documents/Qt\ project/Genimon/build/Desktop_Qt_6_7_3_MSVC2022_64bit-MinSizeRel/CMakeFiles/3.30.2/CMakeRCCompiler.cmake \
@@ -375,19 +386,13 @@ Genimon_autogen/timestamp: \
 	C:/Users/dylan/OneDrive/Documents/Qt\ project/Genimon/combat.h \
 	C:/Users/dylan/OneDrive/Documents/Qt\ project/Genimon/commande.cpp \
 	C:/Users/dylan/OneDrive/Documents/Qt\ project/Genimon/commande.h \
-	C:/Users/dylan/OneDrive/Documents/Qt\ project/Genimon/extfaculte.cpp \
-	C:/Users/dylan/OneDrive/Documents/Qt\ project/Genimon/extfaculte.h \
 	C:/Users/dylan/OneDrive/Documents/Qt\ project/Genimon/genidex.cpp \
 	C:/Users/dylan/OneDrive/Documents/Qt\ project/Genimon/genidex.h \
 	C:/Users/dylan/OneDrive/Documents/Qt\ project/Genimon/historencontre.cpp \
 	C:/Users/dylan/OneDrive/Documents/Qt\ project/Genimon/historencontre.h \
-	C:/Users/dylan/OneDrive/Documents/Qt\ project/Genimon/intfaculte.cpp \
-	C:/Users/dylan/OneDrive/Documents/Qt\ project/Genimon/intfaculte.h \
 	C:/Users/dylan/OneDrive/Documents/Qt\ project/Genimon/main.cpp \
 	C:/Users/dylan/OneDrive/Documents/Qt\ project/Genimon/mainwindow.cpp \
 	C:/Users/dylan/OneDrive/Documents/Qt\ project/Genimon/mainwindow.h \
-	C:/Users/dylan/OneDrive/Documents/Qt\ project/Genimon/pause.cpp \
-	C:/Users/dylan/OneDrive/Documents/Qt\ project/Genimon/pause.h \
 	C:/Users/dylan/OneDrive/Documents/Qt\ project/Genimon/regle.cpp \
 	C:/Users/dylan/OneDrive/Documents/Qt\ project/Genimon/regle.h \
 	C:/Users/dylan/OneDrive/Documents/Qt\ project/Genimon/serialcommunication.cpp \
@@ -422,16 +427,14 @@ Genimon_autogen/timestamp: \
 	C:/mingw64/share/cmake-3.30/Modules/Platform/Windows-MSVC.cmake \
 	C:/mingw64/share/cmake-3.30/Modules/Platform/Windows.cmake \
 	C:/mingw64/share/cmake-3.30/Modules/Platform/WindowsPaths.cmake \
+	C:/Users/dylan/OneDrive/Documents/Qt\ project/Genimon/Map.ui \
 	C:/Users/dylan/OneDrive/Documents/Qt\ project/Genimon/capture.ui \
 	C:/Users/dylan/OneDrive/Documents/Qt\ project/Genimon/choixgenimon.ui \
 	C:/Users/dylan/OneDrive/Documents/Qt\ project/Genimon/choixjoueur.ui \
 	C:/Users/dylan/OneDrive/Documents/Qt\ project/Genimon/combat.ui \
 	C:/Users/dylan/OneDrive/Documents/Qt\ project/Genimon/commande.ui \
-	C:/Users/dylan/OneDrive/Documents/Qt\ project/Genimon/extfaculte.ui \
 	C:/Users/dylan/OneDrive/Documents/Qt\ project/Genimon/genidex.ui \
 	C:/Users/dylan/OneDrive/Documents/Qt\ project/Genimon/historencontre.ui \
-	C:/Users/dylan/OneDrive/Documents/Qt\ project/Genimon/intfaculte.ui \
 	C:/Users/dylan/OneDrive/Documents/Qt\ project/Genimon/mainwindow.ui \
-	C:/Users/dylan/OneDrive/Documents/Qt\ project/Genimon/pause.ui \
 	C:/Users/dylan/OneDrive/Documents/Qt\ project/Genimon/regle.ui \
 	C:/mingw64/bin/cmake.exe
