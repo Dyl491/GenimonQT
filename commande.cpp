@@ -1,8 +1,6 @@
 #include "commande.h"
 #include <QTimer>
 #include <QVBoxLayout>
-#include "serialcommunication.h"
-#include <QJsonObject>
 #include <QKeyEvent>
 
 
