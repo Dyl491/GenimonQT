@@ -1,6 +1,5 @@
 #include "combat.h"
 #include "ui_combat.h"
-#include <QTimer>
 #include <QPixmap>
 
 Combat::Combat(QWidget *parent)
@@ -90,5 +89,12 @@ void Combat::on_Attaque3_clicked(bool checked)
 void Combat::on_Attaque4_clicked(bool checked)
 {
 
+}
+
+
+
+void Combat::returnMap()
+{
+    this->hide();
 }
 

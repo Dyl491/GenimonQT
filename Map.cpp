@@ -34,7 +34,6 @@ Map::~Map()
     serialComm->stopReading();
     delete serialComm;
     delete timer;
-    delete ui;
 
     if (genidex)
     {
@@ -44,6 +43,12 @@ Map::~Map()
     {
         delete historencontre;
     }
+    if (combat)
+    {
+        delete combat;
+    }
+
+    delete ui;
 }
 
 
@@ -148,6 +153,7 @@ void Map::createPauseMenu()
     btnHistory = new QPushButton("Historique", pauseMenu);
     btnSave = new QPushButton("Sauvegarder", pauseMenu);
     btnQuit = new QPushButton("Quitter", pauseMenu);
+    buttons << btnResume << btnGenidex << btnHistory << btnSave << btnQuit;
 
     //Definir la taille des boutons
     btnResume->setFixedSize(200, 40);
@@ -190,6 +196,8 @@ void Map::createPauseMenu()
     pauseBackground->move((width() - pauseBackground->width()) / 2, (height() - pauseBackground->height()) / 2);
 
     pauseMenu = pauseBackground;
+
+    highlight();
     pauseMenu->hide();  // Masquer le menu de pause au départ
 }
 
@@ -198,11 +206,24 @@ void Map::showPause()
     if (pauseMenu->isVisible()) {
         darkBackground->hide();  // Masquer le fond sombre
         pauseMenu->hide();  // Si le menu de pause est visible, on le cache
+        isPaused = false;
     } else {
         darkBackground->show();  // Afficher le fond sombre
         pauseMenu->show();  // Sinon, on l'affiche
+        isPaused = true;
     }
 }
+
+void Map::highlight() {
+    for (int i = 0; i < buttons.size(); ++i) {
+        if (i == selectedButtonIndex) {
+            buttons[i]->setStyleSheet("background-color: red; color: white; font-size: 14px;");
+        } else {
+            buttons[i]->setStyleSheet("background-color: white; color: black; font-size: 14px;");
+        }
+    }
+}
+
 
 
 //****************************************************************************
@@ -224,9 +245,22 @@ void Map::showIntFaculte()
 
 
 
+void Map::showCombat()
+{
+    if (combat) {
+        combat->close();
+        delete combat;
+        combat = nullptr;
+    }
+    combat = new Combat(this);
+    combat->show();
+    showPause();
+}
+
+
+
 void Map::resumeGame()
 {
-    isPaused = false;
     showPause();
 
 }
@@ -285,6 +319,37 @@ void Map::main()
     if (ClavierEsc || stateBouton4)
     {
         showPause();
+    }
+
+    if (isPaused && selectedButtonIndex >= 0 && selectedButtonIndex <4 && (ClavierS || stateBouton3))
+    {
+        selectedButtonIndex++;
+        highlight();
+    }else if (isPaused && selectedButtonIndex > 0 && selectedButtonIndex <=4 && (ClavierW || stateBouton1))
+    {
+        selectedButtonIndex--;
+        highlight();
+    }else if (isPaused && (ClavierEnter || stateBoutonJoy))
+    {
+        switch (selectedButtonIndex) {
+        case 0:
+            resumeGame();
+            break;
+        case 1:
+            openGenidex();
+            break;
+        case 2:
+            openHistory();
+            break;
+        case 3:
+            saveGame();
+            break;
+        case 4:
+            quitGame();
+            break;
+        default:
+            break;
+        }
     }
 }
 

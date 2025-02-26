@@ -45,8 +45,12 @@ private:
 
     void createPauseMenu();
     void showPause();
+    void showCombat();
+    void highlight();
 
     bool isPaused = false;
+    int selectedButtonIndex = 0; // 0 = reprendre, ...
+    QList<QPushButton*> buttons;
     QPushButton *btnResume;  // Bouton pour reprendre la partie
     QPushButton *btnGenidex;  // Bouton pour ouvrir le Genidex
     QPushButton *btnHistory;  // Bouton pour ouvrir l'historique des rencontres
