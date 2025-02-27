@@ -27,6 +27,8 @@ void SerialCommunication::connectToArduino() {
         if (serialPort->open(QIODevice::ReadWrite)) {
             qDebug() << "Connecté à l'Arduino sur le port" << info.portName();
             break;
+        }else {
+            qDebug() << "Échec de la connexion au port" << info.portName();
         }
     }
 }
@@ -35,24 +37,45 @@ void SerialCommunication::startReading() {
     // Commence à lire les données série
     if (!serialPort->isOpen()) {
         connectToArduino();
+        qDebug() << "Commence à lire les données série";
     }
 }
 
 void SerialCommunication::stopReading() {
     if (serialPort->isOpen()) {
         serialPort->close();
+        qDebug() << "Arrete à lire les données série";
     }
 }
 
 void SerialCommunication::onReadyRead() {
     // Lire les données du port série
     QByteArray data = serialPort->readAll();
+    qDebug() << "Lire les données du port série" << data;
 
     // Si les données sont en format JSON, on les analyse
     QJsonDocument doc = QJsonDocument::fromJson(data);
+
+    if (doc.isNull()) {
+        qDebug() << "Erreur : Le JSON est mal formé.";
+        return;
+    }
+
     if (doc.isObject()) {
         QJsonObject jsonObject = doc.object();
-        emit dataReceived(jsonObject);  // Émettre les données pour les utiliser dans MainWindow
+        qDebug() << "C'est un objet JSON";
+        qDebug() << "Émission du signal dataReceived";
+        emit dataReceived(jsonObject);
+    }else if (doc.isArray()) {
+        QJsonArray jsonArray = doc.array();
+        qDebug() << "C'est un tableau JSON";
+        // Vous pouvez encapsuler le tableau dans un objet si nécessaire
+        QJsonObject jsonObject;
+        jsonObject["array"] = jsonArray;
+        emit dataReceived(jsonObject);
+    }else {
+        QVariant value = doc.toVariant();
+        qDebug() << "C'est une valeur simple:" << value;
     }
 }
 

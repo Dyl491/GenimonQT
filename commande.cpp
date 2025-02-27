@@ -3,8 +3,6 @@
 #include <QVBoxLayout>
 #include <QKeyEvent>
 
-
-
 Commande::Commande(QWidget *parent)
     : QWidget(parent)
     , ui(new Ui::Commande), serialComm(new SerialCommunication(this))
@@ -12,6 +10,7 @@ Commande::Commande(QWidget *parent)
     ui->setupUi(this);
 
     setFocusPolicy(Qt::StrongFocus);
+    setFocus();
 
     connect(serialComm, &SerialCommunication::dataReceived, this, &Commande::onDataReceived);
 
@@ -47,6 +46,7 @@ Commande::~Commande()
 
 void Commande::on_Retour_clicked(bool checked)
 {
+    serialComm->stopReading();
     this->hide();
     QWidget *parent = this->parentWidget();
     parent->show();
@@ -55,6 +55,7 @@ void Commande::on_Retour_clicked(bool checked)
 void Commande::onDataReceived(QJsonObject data){
 
     // Traitement des données reçues depuis Arduino
+    qDebug() << "Données reçues dans Commande:" << data;
     stateBouton1 = data["button1"].toBool();
     stateBouton2 = data["button2"].toBool();
     stateBouton3 = data["button3"].toBool();
@@ -65,6 +66,7 @@ void Commande::onDataReceived(QJsonObject data){
     accY = data["AccY"].toInt();
     accZ = data["AccZ"].toInt();
 
+    qDebug() << "BoutonData" << stateBouton1 << stateBouton2 << stateBouton3 << stateBouton4;
 }
 
 void Commande::toggleState()

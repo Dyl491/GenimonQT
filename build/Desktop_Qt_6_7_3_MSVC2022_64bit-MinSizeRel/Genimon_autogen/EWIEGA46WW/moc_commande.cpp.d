@@ -1,4 +1,5 @@
 C:/Users/dylan/OneDrive/Documents/Qt\ project/Genimon/build/Desktop_Qt_6_7_3_MSVC2022_64bit-MinSizeRel/Genimon_autogen/EWIEGA46WW/moc_commande.cpp: C:/Users/dylan/OneDrive/Documents/Qt\ project/Genimon/commande.h \
+  C:/Qt/6.7.3/msvc2022_64/include/QtCore/QJsonArray \
   C:/Qt/6.7.3/msvc2022_64/include/QtCore/QJsonDocument \
   C:/Qt/6.7.3/msvc2022_64/include/QtCore/QJsonObject \
   C:/Qt/6.7.3/msvc2022_64/include/QtCore/QList \
@@ -66,6 +67,7 @@ C:/Users/dylan/OneDrive/Documents/Qt\ project/Genimon/build/Desktop_Qt_6_7_3_MSV
   C:/Qt/6.7.3/msvc2022_64/include/QtCore/qiodevicebase.h \
   C:/Qt/6.7.3/msvc2022_64/include/QtCore/qiterable.h \
   C:/Qt/6.7.3/msvc2022_64/include/QtCore/qiterator.h \
+  C:/Qt/6.7.3/msvc2022_64/include/QtCore/qjsonarray.h \
   C:/Qt/6.7.3/msvc2022_64/include/QtCore/qjsondocument.h \
   C:/Qt/6.7.3/msvc2022_64/include/QtCore/qjsonobject.h \
   C:/Qt/6.7.3/msvc2022_64/include/QtCore/qjsonvalue.h \

@@ -4,6 +4,7 @@
 #include <QSerialPort>
 #include <QJsonDocument>
 #include <QJsonObject>
+#include <QJsonArray>
 
 class SerialCommunication : public QObject
 {
