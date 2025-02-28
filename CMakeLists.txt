@@ -39,6 +39,16 @@ if(${QT_VERSION_MAJOR} GREATER_EQUAL 6)
 
         serialcommunication.h serialcommunication.cpp
         commande.h commande.cpp commande.ui
+        Genimon.h
+        Genimon.cpp
+        GestionJeu.h
+        Joueur.h
+        Vecteur.h
+        GenimonS.h
+        unistd.h
+        GestionJeu.cpp
+        Joueur.cpp
+        GenimonS.cpp
 
     )
 # Define target properties for Android with Qt 6 as:

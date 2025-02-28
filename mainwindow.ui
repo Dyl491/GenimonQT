@@ -570,7 +570,7 @@
      </palette>
     </property>
     <property name="text">
-     <string>Règle</string>
+     <string>Déroulement du jeu</string>
     </property>
    </widget>
    <widget class="QPushButton" name="Commande">
@@ -620,7 +620,7 @@
      </palette>
     </property>
     <property name="text">
-     <string>Commande</string>
+     <string>Commandes</string>
     </property>
    </widget>
    <widget class="QPushButton" name="Combat">
