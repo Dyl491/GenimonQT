@@ -49,38 +49,48 @@ void SerialCommunication::stopReading() {
 }
 
 void SerialCommunication::onReadyRead() {
+    static QByteArray buffer;  // Tampon pour accumuler les données
+
     // Lire les données du port série
-    QByteArray data = serialPort->readAll();
-    qDebug() << "Lire les données du port série" << data;
+    // Lire toutes les données disponibles
+    buffer.append(serialPort->readAll());
+    qDebug() << "Données lues:" << buffer;
+    qDebug() << "Lire les données du port série" << buffer;
+
+    // Vérifier si nous avons un message complet (terminé par un '\n')
+    int endIndex = buffer.indexOf('\n');
+    if (endIndex != -1) {
+        QByteArray data = buffer.left(endIndex);  // Extraire le message complet
+        buffer.remove(0, endIndex + 1);  // Supprimer le message du tampon
 
     // Si les données sont en format JSON, on les analyse
     QJsonDocument doc = QJsonDocument::fromJson(data);
-
     if (doc.isNull()) {
         qDebug() << "Erreur : Le JSON est mal formé.";
         return;
+        } else {
+            if (doc.isObject()) {
+                QJsonObject jsonObject = doc.object();
+                qDebug() << "C'est un objet JSON";
+                qDebug() << "Émission du signal dataReceived";
+                emit dataReceived(jsonObject);
+            }else if (doc.isArray()) {
+                QJsonArray jsonArray = doc.array();
+                qDebug() << "C'est un tableau JSON";
+                QJsonObject jsonObject;
+                jsonObject["array"] = jsonArray;
+                emit dataReceived(jsonObject);
+            }else {
+                QVariant value = doc.toVariant();
+                qDebug() << "C'est une valeur simple:" << value;
+            }
+        }
     }
 
-    if (doc.isObject()) {
-        QJsonObject jsonObject = doc.object();
-        qDebug() << "C'est un objet JSON";
-        qDebug() << "Émission du signal dataReceived";
-        emit dataReceived(jsonObject);
-    }else if (doc.isArray()) {
-        QJsonArray jsonArray = doc.array();
-        qDebug() << "C'est un tableau JSON";
-        // Vous pouvez encapsuler le tableau dans un objet si nécessaire
-        QJsonObject jsonObject;
-        jsonObject["array"] = jsonArray;
-        emit dataReceived(jsonObject);
-    }else {
-        QVariant value = doc.toVariant();
-        qDebug() << "C'est une valeur simple:" << value;
-    }
+
 }
 
 void SerialCommunication::sendJsonToArduino(const QString &message, int segment) {
-    // Créer un objet JSON
     QJsonObject jsonObject;
     jsonObject["message"] = message;
     jsonObject["segment"] = segment;
@@ -88,6 +98,8 @@ void SerialCommunication::sendJsonToArduino(const QString &message, int segment)
     // Convertir l'objet JSON en QByteArray
     QJsonDocument doc(jsonObject);
     QByteArray jsonData = doc.toJson();
+
+    jsonData.append('\n');
 
     // Envoyer le message JSON via le port série
     if (serialPort->isOpen()) {
