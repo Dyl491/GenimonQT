@@ -2,13 +2,11 @@
 #define MAINWINDOW_H
 
 #include <QMainWindow>
+#include <QTimer>
+#include <QKeyEvent>
 #include "regle.h"
 #include "choixjoueur.h"
 #include "commande.h"
-#include "capture.h"
-#include "combat.h"
-#include "genidex.h"
-#include "historencontre.h"
 
 QT_BEGIN_NAMESPACE
 namespace Ui {
@@ -25,32 +23,32 @@ public:
     ~MainWindow();
 
 private slots:
-    void on_Quitter_clicked(bool checked);
-
-    void on_Start_clicked(bool checked);
-
-    void on_Regle_clicked(bool checked);
-
-    void on_Commande_clicked(bool checked);
-
-    void on_Capture_clicked(bool checked);
-
-    void on_Combat_clicked(bool checked);
-
-    void on_Genidex_clicked(bool checked);
-
-    void on_Historencontre_clicked(bool checked);
+    void main();
+    void keyPressEvent(QKeyEvent *event);
+    void keyReleaseEvent(QKeyEvent *event);
 
 private:
     Ui::MainWindow *ui;
+    SerialCommunication *serialComm;    //Communication Arduino
+    QTimer *timer;
+
     Regle *regle;
     Commande *commande;
 
-    //Pour test
-    Capture *capture;
-    Combat *combat;
-    Genidex *genidex;
-    HistoRencontre *historencontre;
+    int selectedButtonIndex = 0;
+    QList<QLabel*> buttons;
+    void highlight();
+
+    void startGame();
+    void continuer();
+    void menuCommande();
+    void menuRegle();
+    void quitter();
+
+
+    bool ClavierW = false;
+    bool ClavierS = false;
+    bool ClavierEnter = false;
 
 };
 #endif // MAINWINDOW_H

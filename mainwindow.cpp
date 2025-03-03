@@ -7,34 +7,59 @@ MainWindow::MainWindow(QWidget *parent)
 {
     ui->setupUi(this);
 
-    //mettre 1 si test et 0 si en parti normal
-    if (1==1){
-        ui->Capture->setVisible(true);
-        ui->Combat->setVisible(true);
-        ui->Genidex->setVisible(true);
-        ui->Historencontre->setVisible(true);
-    }else{
-        ui->Capture->setVisible(false);
-        ui->Combat->setVisible(false);
-        ui->Genidex->setVisible(false);
-        ui->Historencontre->setVisible(false);
-    }
+    buttons << ui->Start << ui->Continuer << ui->Commande << ui->Regle << ui->Quitter;
+
+    // Créer un timer pour la boucle régulière
+    timer = new QTimer(this);
+    connect(timer, &QTimer::timeout, this, &MainWindow::main);
+    timer->start(250);  // Le timer s'exécute toutes les 250 ms
+
+    highlight();
 }
 
 MainWindow::~MainWindow()
 {
+    delete timer;
     delete ui;
 }
 
 
 
-void MainWindow::on_Quitter_clicked(bool checked)
+void MainWindow::keyPressEvent(QKeyEvent *event)
+{
+    if (event->key() == Qt::Key_W) {
+        ClavierW = 1;
+    }
+    if (event->key() == Qt::Key_S) {
+        ClavierS = 1;
+    }
+    if (event->key() == Qt::Key_Enter) {
+        ClavierEnter = 1;
+    }
+}
+
+void MainWindow::keyReleaseEvent(QKeyEvent *event)
+{
+    if (event->key() == Qt::Key_W) {
+        ClavierW = 0;
+    }
+    if (event->key() == Qt::Key_S) {
+        ClavierS = 0;
+    }
+    if (event->key() == Qt::Key_Enter) {
+        ClavierEnter = 0;
+    }
+}
+
+
+
+void MainWindow::quitter()
 {
     QApplication::quit();
 }
 
 
-void MainWindow::on_Start_clicked(bool checked)
+void MainWindow::startGame()
 {
     Map* map = new Map(this);
     ChoixJoueur *choixJoueur = new ChoixJoueur(map, this);
@@ -43,44 +68,66 @@ void MainWindow::on_Start_clicked(bool checked)
 }
 
 
-void MainWindow::on_Regle_clicked(bool checked)
+void MainWindow::menuRegle()
 {
     regle = new Regle(this);
     regle->show();
 }
 
 
-void MainWindow::on_Commande_clicked(bool checked)
+void MainWindow::menuCommande()
 {
     commande = new Commande(this);
     commande->show();
 }
 
 
-void MainWindow::on_Capture_clicked(bool checked)
+void MainWindow::continuer()
 {
-    capture = new Capture(this);
-    capture->show();
+
 }
 
-
-void MainWindow::on_Combat_clicked(bool checked)
-{
-    combat = new Combat(this);
-    combat->show();
+void MainWindow::highlight() {
+    for (int i = 0; i < buttons.size(); ++i) {
+        if (i == selectedButtonIndex) {
+            buttons[i]->setStyleSheet("background-color: red; color: white; font-size: 14px;");
+        } else {
+            buttons[i]->setStyleSheet("background-color: white; color: black; font-size: 14px;");
+        }
+    }
 }
 
-
-void MainWindow::on_Genidex_clicked(bool checked)
+void MainWindow::main()
 {
-    genidex = new Genidex(this);
-    genidex->show();
-}
-
-
-void MainWindow::on_Historencontre_clicked(bool checked)
-{
-    historencontre = new HistoRencontre(this);
-    historencontre->show();
+    if (selectedButtonIndex >= 0 && selectedButtonIndex <4 && ClavierS)
+    {
+        selectedButtonIndex++;
+        highlight();
+    }else if (selectedButtonIndex > 0 && selectedButtonIndex <=4 && ClavierW )
+    {
+        selectedButtonIndex--;
+        highlight();
+    }else if (ClavierEnter)
+    {
+        switch (selectedButtonIndex) {
+        case 0:
+            startGame();
+            break;
+        case 1:
+            continuer();
+            break;
+        case 2:
+            menuCommande();
+            break;
+        case 3:
+            menuRegle();
+            break;
+        case 4:
+            quitter();
+            break;
+        default:
+            break;
+        }
+    }
 }
 
