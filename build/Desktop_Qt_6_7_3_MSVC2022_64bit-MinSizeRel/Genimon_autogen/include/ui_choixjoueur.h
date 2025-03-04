@@ -44,7 +44,7 @@ public:
         BackGround->setScaledContents(true);
         Titre = new QLabel(ChoixJoueur);
         Titre->setObjectName("Titre");
-        Titre->setGeometry(QRect(240, 20, 800, 100));
+        Titre->setGeometry(QRect(190, 20, 900, 100));
         QPalette palette;
         QBrush brush(QColor(0, 0, 0, 255));
         brush.setStyle(Qt::SolidPattern);

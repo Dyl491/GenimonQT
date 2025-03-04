@@ -50,9 +50,9 @@
   <widget class="QLabel" name="Titre">
    <property name="geometry">
     <rect>
-     <x>240</x>
+     <x>190</x>
      <y>20</y>
-     <width>800</width>
+     <width>900</width>
      <height>100</height>
     </rect>
    </property>
