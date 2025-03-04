@@ -13,7 +13,6 @@
 #include <QtWidgets/QApplication>
 #include <QtWidgets/QLabel>
 #include <QtWidgets/QLineEdit>
-#include <QtWidgets/QPushButton>
 #include <QtWidgets/QWidget>
 
 QT_BEGIN_NAMESPACE
@@ -22,11 +21,12 @@ class Ui_ChoixJoueur
 {
 public:
     QLabel *BackGround;
-    QLabel *TitreJeu;
+    QLabel *Titre;
     QLabel *Nom;
     QLineEdit *NomChoisi;
-    QPushButton *Continuer;
-    QPushButton *Retour;
+    QLabel *Continuer;
+    QLabel *Retour;
+    QLabel *Description;
 
     void setupUi(QWidget *ChoixJoueur)
     {
@@ -42,9 +42,9 @@ public:
         BackGround->setTextFormat(Qt::TextFormat::PlainText);
         BackGround->setPixmap(QPixmap(QString::fromUtf8(":/MainMenu/Image_Qt/EcranAccueil/pixel-art-sky-background-with-clouds-cloudy-blue-sky-for-8bit-game-on-white-background-vector.jpg")));
         BackGround->setScaledContents(true);
-        TitreJeu = new QLabel(ChoixJoueur);
-        TitreJeu->setObjectName("TitreJeu");
-        TitreJeu->setGeometry(QRect(240, 20, 800, 100));
+        Titre = new QLabel(ChoixJoueur);
+        Titre->setObjectName("Titre");
+        Titre->setGeometry(QRect(240, 20, 800, 100));
         QPalette palette;
         QBrush brush(QColor(0, 0, 0, 255));
         brush.setStyle(Qt::SolidPattern);
@@ -52,21 +52,21 @@ public:
         palette.setBrush(QPalette::Active, QPalette::Text, brush);
         palette.setBrush(QPalette::Inactive, QPalette::WindowText, brush);
         palette.setBrush(QPalette::Inactive, QPalette::Text, brush);
-        TitreJeu->setPalette(palette);
+        Titre->setPalette(palette);
         QFont font;
         font.setFamilies({QString::fromUtf8("FZShuTi")});
         font.setPointSize(60);
         font.setUnderline(false);
         font.setStrikeOut(false);
         font.setStyleStrategy(QFont::PreferDefault);
-        TitreJeu->setFont(font);
-        TitreJeu->setMouseTracking(false);
-        TitreJeu->setContextMenuPolicy(Qt::ContextMenuPolicy::DefaultContextMenu);
-        TitreJeu->setAutoFillBackground(false);
-        TitreJeu->setTextFormat(Qt::TextFormat::PlainText);
-        TitreJeu->setScaledContents(false);
-        TitreJeu->setAlignment(Qt::AlignmentFlag::AlignCenter);
-        TitreJeu->setWordWrap(false);
+        Titre->setFont(font);
+        Titre->setMouseTracking(false);
+        Titre->setContextMenuPolicy(Qt::ContextMenuPolicy::DefaultContextMenu);
+        Titre->setAutoFillBackground(false);
+        Titre->setTextFormat(Qt::TextFormat::PlainText);
+        Titre->setScaledContents(false);
+        Titre->setAlignment(Qt::AlignmentFlag::AlignCenter);
+        Titre->setWordWrap(false);
         Nom = new QLabel(ChoixJoueur);
         Nom->setObjectName("Nom");
         Nom->setGeometry(QRect(310, 270, 100, 40));
@@ -79,36 +79,22 @@ public:
         NomChoisi->setGeometry(QRect(410, 260, 400, 60));
         NomChoisi->setFont(font1);
         NomChoisi->setMaxLength(20);
-        Continuer = new QPushButton(ChoixJoueur);
+        Continuer = new QLabel(ChoixJoueur);
         Continuer->setObjectName("Continuer");
-        Continuer->setGeometry(QRect(565, 540, 150, 40));
-        QPalette palette1;
-        QBrush brush1(QColor(135, 135, 135, 255));
-        brush1.setStyle(Qt::SolidPattern);
-        palette1.setBrush(QPalette::Active, QPalette::Button, brush1);
-        QBrush brush2(QColor(189, 189, 189, 255));
-        brush2.setStyle(Qt::SolidPattern);
-        palette1.setBrush(QPalette::Active, QPalette::Midlight, brush2);
-        palette1.setBrush(QPalette::Inactive, QPalette::Button, brush1);
-        palette1.setBrush(QPalette::Inactive, QPalette::Midlight, brush2);
-        palette1.setBrush(QPalette::Disabled, QPalette::Button, brush1);
-        palette1.setBrush(QPalette::Disabled, QPalette::Midlight, brush2);
-        Continuer->setPalette(palette1);
-        QFont font2;
-        font2.setKerning(true);
-        Continuer->setFont(font2);
-        Retour = new QPushButton(ChoixJoueur);
+        Continuer->setGeometry(QRect(540, 540, 200, 40));
+        Continuer->setAutoFillBackground(true);
+        Continuer->setAlignment(Qt::AlignmentFlag::AlignCenter);
+        Retour = new QLabel(ChoixJoueur);
         Retour->setObjectName("Retour");
-        Retour->setGeometry(QRect(565, 600, 150, 40));
-        QPalette palette2;
-        palette2.setBrush(QPalette::Active, QPalette::Button, brush1);
-        palette2.setBrush(QPalette::Active, QPalette::Midlight, brush2);
-        palette2.setBrush(QPalette::Inactive, QPalette::Button, brush1);
-        palette2.setBrush(QPalette::Inactive, QPalette::Midlight, brush2);
-        palette2.setBrush(QPalette::Disabled, QPalette::Button, brush1);
-        palette2.setBrush(QPalette::Disabled, QPalette::Midlight, brush2);
-        Retour->setPalette(palette2);
-        Retour->setFont(font2);
+        Retour->setGeometry(QRect(540, 600, 200, 40));
+        Retour->setAutoFillBackground(true);
+        Retour->setAlignment(Qt::AlignmentFlag::AlignCenter);
+        Description = new QLabel(ChoixJoueur);
+        Description->setObjectName("Description");
+        Description->setGeometry(QRect(400, 200, 500, 250));
+        Description->setAutoFillBackground(true);
+        Description->setAlignment(Qt::AlignmentFlag::AlignCenter);
+        Description->setWordWrap(true);
 
         retranslateUi(ChoixJoueur);
 
@@ -119,10 +105,11 @@ public:
     {
         ChoixJoueur->setWindowTitle(QCoreApplication::translate("ChoixJoueur", "Form", nullptr));
         BackGround->setText(QString());
-        TitreJeu->setText(QCoreApplication::translate("ChoixJoueur", "Choix du joueur", nullptr));
+        Titre->setText(QCoreApplication::translate("ChoixJoueur", "Choix du joueur", nullptr));
         Nom->setText(QCoreApplication::translate("ChoixJoueur", "Nom :", nullptr));
-        Continuer->setText(QCoreApplication::translate("ChoixJoueur", "Continuer", nullptr));
-        Retour->setText(QCoreApplication::translate("ChoixJoueur", "Retour", nullptr));
+        Continuer->setText(QCoreApplication::translate("ChoixJoueur", "Continuer (1)", nullptr));
+        Retour->setText(QCoreApplication::translate("ChoixJoueur", "Retour (2)", nullptr));
+        Description->setText(QCoreApplication::translate("ChoixJoueur", "Description", nullptr));
     } // retranslateUi
 
 };

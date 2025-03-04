@@ -26,6 +26,8 @@ private slots:
     void main();
     void keyPressEvent(QKeyEvent *event);
     void keyReleaseEvent(QKeyEvent *event);
+    void showEvent(QShowEvent *event);
+    void closeEvent(QCloseEvent *event);
 
 private:
     Ui::MainWindow *ui;
@@ -35,20 +37,16 @@ private:
     Regle *regle;
     Commande *commande;
 
-    int selectedButtonIndex = 0;
     QList<QLabel*> buttons;
-    void highlight();
 
     void startGame();
-    void continuer();
     void menuCommande();
     void menuRegle();
     void quitter();
 
-
-    bool ClavierW = false;
-    bool ClavierS = false;
-    bool ClavierEnter = false;
-
+    bool Clavier1 =0;
+    bool Clavier2 =0;
+    bool Clavier3 =0;
+    bool Clavier4 =0;
 };
 #endif // MAINWINDOW_H

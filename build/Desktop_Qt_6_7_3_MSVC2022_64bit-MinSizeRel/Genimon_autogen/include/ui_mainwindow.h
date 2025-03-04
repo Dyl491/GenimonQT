@@ -25,7 +25,6 @@ public:
     QLabel *TitreJeu;
     QLabel *SousTitre;
     QLabel *Start;
-    QLabel *Continuer;
     QLabel *Commande;
     QLabel *Regle;
     QLabel *Quitter;
@@ -81,27 +80,22 @@ public:
         SousTitre->setAlignment(Qt::AlignmentFlag::AlignCenter);
         Start = new QLabel(centralwidget);
         Start->setObjectName("Start");
-        Start->setGeometry(QRect(565, 360, 150, 40));
+        Start->setGeometry(QRect(540, 420, 200, 40));
         Start->setAutoFillBackground(true);
         Start->setAlignment(Qt::AlignmentFlag::AlignCenter);
-        Continuer = new QLabel(centralwidget);
-        Continuer->setObjectName("Continuer");
-        Continuer->setGeometry(QRect(565, 420, 150, 40));
-        Continuer->setAutoFillBackground(true);
-        Continuer->setAlignment(Qt::AlignmentFlag::AlignCenter);
         Commande = new QLabel(centralwidget);
         Commande->setObjectName("Commande");
-        Commande->setGeometry(QRect(565, 480, 150, 40));
+        Commande->setGeometry(QRect(540, 480, 200, 40));
         Commande->setAutoFillBackground(true);
         Commande->setAlignment(Qt::AlignmentFlag::AlignCenter);
         Regle = new QLabel(centralwidget);
         Regle->setObjectName("Regle");
-        Regle->setGeometry(QRect(565, 540, 150, 40));
+        Regle->setGeometry(QRect(540, 540, 200, 40));
         Regle->setAutoFillBackground(true);
         Regle->setAlignment(Qt::AlignmentFlag::AlignCenter);
         Quitter = new QLabel(centralwidget);
         Quitter->setObjectName("Quitter");
-        Quitter->setGeometry(QRect(565, 600, 150, 40));
+        Quitter->setGeometry(QRect(540, 600, 200, 40));
         Quitter->setAutoFillBackground(true);
         Quitter->setAlignment(Qt::AlignmentFlag::AlignCenter);
         MainWindow->setCentralWidget(centralwidget);
@@ -123,11 +117,10 @@ public:
         BackGround->setText(QString());
         TitreJeu->setText(QCoreApplication::translate("MainWindow", "Genimon", nullptr));
         SousTitre->setText(QCoreApplication::translate("MainWindow", "Vert & or", nullptr));
-        Start->setText(QCoreApplication::translate("MainWindow", "Nouvelle partie", nullptr));
-        Continuer->setText(QCoreApplication::translate("MainWindow", "Continuer une partie", nullptr));
-        Commande->setText(QCoreApplication::translate("MainWindow", "Commandes", nullptr));
-        Regle->setText(QCoreApplication::translate("MainWindow", "D\303\251roulement du jeu", nullptr));
-        Quitter->setText(QCoreApplication::translate("MainWindow", "Quitter le jeu", nullptr));
+        Start->setText(QCoreApplication::translate("MainWindow", "Nouvelle partie (1)", nullptr));
+        Commande->setText(QCoreApplication::translate("MainWindow", "Commandes (2)", nullptr));
+        Regle->setText(QCoreApplication::translate("MainWindow", "D\303\251roulement du jeu (3)", nullptr));
+        Quitter->setText(QCoreApplication::translate("MainWindow", "Quitter le jeu (4)", nullptr));
     } // retranslateUi
 
 };

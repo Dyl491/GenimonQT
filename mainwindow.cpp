@@ -7,14 +7,16 @@ MainWindow::MainWindow(QWidget *parent)
 {
     ui->setupUi(this);
 
-    buttons << ui->Start << ui->Continuer << ui->Commande << ui->Regle << ui->Quitter;
+    buttons << ui->Start << ui->Commande << ui->Regle << ui->Quitter;
 
     // Créer un timer pour la boucle régulière
     timer = new QTimer(this);
     connect(timer, &QTimer::timeout, this, &MainWindow::main);
-    timer->start(250);  // Le timer s'exécute toutes les 250 ms
+    timer->start(100);  // Le timer s'exécute toutes les 100 ms
 
-    highlight();
+    for (int i = 0; i < buttons.size(); ++i) {
+        buttons[i]->setStyleSheet("background-color: white; color: black; font-size: 14px;");
+    }
 }
 
 MainWindow::~MainWindow()
@@ -27,28 +29,50 @@ MainWindow::~MainWindow()
 
 void MainWindow::keyPressEvent(QKeyEvent *event)
 {
-    if (event->key() == Qt::Key_W) {
-        ClavierW = 1;
+    if (event->key() == Qt::Key_1) {
+        Clavier1 = 1;
     }
-    if (event->key() == Qt::Key_S) {
-        ClavierS = 1;
+    if (event->key() == Qt::Key_2) {
+        Clavier2 = 1;
     }
-    if (event->key() == Qt::Key_Enter) {
-        ClavierEnter = 1;
+    if (event->key() == Qt::Key_3) {
+        Clavier3 = 1;
+    }
+    if (event->key() == Qt::Key_4) {
+        Clavier4 = 1;
     }
 }
 
 void MainWindow::keyReleaseEvent(QKeyEvent *event)
 {
-    if (event->key() == Qt::Key_W) {
-        ClavierW = 0;
+    if (event->key() == Qt::Key_1) {
+        Clavier1 = 0;
     }
-    if (event->key() == Qt::Key_S) {
-        ClavierS = 0;
+    if (event->key() == Qt::Key_2) {
+        Clavier2 = 0;
     }
-    if (event->key() == Qt::Key_Enter) {
-        ClavierEnter = 0;
+    if (event->key() == Qt::Key_3) {
+        Clavier3 = 0;
     }
+    if (event->key() == Qt::Key_4) {
+        Clavier4 = 0;
+    }
+}
+
+void MainWindow::closeEvent(QCloseEvent *event)
+{
+    timer->stop();
+    //qDebug() << "Le timer a été arrêté.";
+
+    QWidget::closeEvent(event);
+}
+
+void MainWindow::showEvent(QShowEvent *event)
+{
+    timer->start();
+    //qDebug() << "Le timer a redémarré.";
+
+    QWidget::showEvent(event);
 }
 
 
@@ -81,53 +105,25 @@ void MainWindow::menuCommande()
     commande->show();
 }
 
-
-void MainWindow::continuer()
-{
-
-}
-
-void MainWindow::highlight() {
-    for (int i = 0; i < buttons.size(); ++i) {
-        if (i == selectedButtonIndex) {
-            buttons[i]->setStyleSheet("background-color: red; color: white; font-size: 14px;");
-        } else {
-            buttons[i]->setStyleSheet("background-color: white; color: black; font-size: 14px;");
-        }
-    }
-}
-
 void MainWindow::main()
 {
-    if (selectedButtonIndex >= 0 && selectedButtonIndex <4 && ClavierS)
+    if (Clavier1)
     {
-        selectedButtonIndex++;
-        highlight();
-    }else if (selectedButtonIndex > 0 && selectedButtonIndex <=4 && ClavierW )
+        startGame();
+        timer->stop();
+
+    }else if (Clavier2)
     {
-        selectedButtonIndex--;
-        highlight();
-    }else if (ClavierEnter)
+        menuCommande();
+        timer->stop();
+    }else if (Clavier3)
     {
-        switch (selectedButtonIndex) {
-        case 0:
-            startGame();
-            break;
-        case 1:
-            continuer();
-            break;
-        case 2:
-            menuCommande();
-            break;
-        case 3:
-            menuRegle();
-            break;
-        case 4:
-            quitter();
-            break;
-        default:
-            break;
-        }
+        menuRegle();
+        timer->stop();
+    }else if (Clavier4)
+    {
+        quitter();
+        timer->stop();
     }
 }
 
