@@ -20,6 +20,8 @@ private:
     Ui::Combat *ui;
     QTimer *TransTimer;
 
+    void returnMap();
+
 private slots:
     void onTimeout();
     void on_Attaque1_clicked(bool checked);

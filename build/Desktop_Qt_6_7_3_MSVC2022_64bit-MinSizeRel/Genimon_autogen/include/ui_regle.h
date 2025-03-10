@@ -30,6 +30,9 @@ public:
         if (Regle->objectName().isEmpty())
             Regle->setObjectName("Regle");
         Regle->resize(1280, 720);
+        QFont font;
+        font.setPointSize(9);
+        Regle->setFont(font);
         BackGround = new QLabel(Regle);
         BackGround->setObjectName("BackGround");
         BackGround->setGeometry(QRect(0, 0, 1280, 720));
@@ -51,11 +54,21 @@ public:
         Retour->setPalette(palette);
         Reglement = new QLabel(Regle);
         Reglement->setObjectName("Reglement");
-        Reglement->setGeometry(QRect(490, 60, 300, 400));
+        Reglement->setEnabled(true);
+        Reglement->setGeometry(QRect(400, 110, 471, 400));
+        QFont font1;
+        font1.setPointSize(12);
+        font1.setBold(false);
+        Reglement->setFont(font1);
+        Reglement->setAcceptDrops(false);
         Reglement->setAlignment(Qt::AlignmentFlag::AlignCenter);
         RegleTitre = new QLabel(Regle);
         RegleTitre->setObjectName("RegleTitre");
-        RegleTitre->setGeometry(QRect(565, 40, 150, 40));
+        RegleTitre->setGeometry(QRect(480, 50, 321, 40));
+        QFont font2;
+        font2.setPointSize(22);
+        font2.setBold(true);
+        RegleTitre->setFont(font2);
         RegleTitre->setAlignment(Qt::AlignmentFlag::AlignCenter);
 
         retranslateUi(Regle);
@@ -68,8 +81,8 @@ public:
         Regle->setWindowTitle(QCoreApplication::translate("Regle", "Form", nullptr));
         BackGround->setText(QString());
         Retour->setText(QCoreApplication::translate("Regle", "Retour au menu", nullptr));
-        Reglement->setText(QCoreApplication::translate("Regle", "Dans le jeu en g\303\251n\303\251ral, ...", nullptr));
-        RegleTitre->setText(QCoreApplication::translate("Regle", "R\303\250gle du jeu", nullptr));
+        Reglement->setText(QCoreApplication::translate("Regle", "<html><head/><body><p align=\"center\">Bienvenue dans Genimon!</p><p align=\"center\">Promenez-vous dans la facult\303\251 de g\303\251nie et rencontrez des</p><p align=\"center\">Genimons. Attrapez-les avec des balles pour les ajouter \303\240 votre</p><p align=\"center\">Genidex ou combattez-les pour tentez de gagner plus de balles.</p><p align=\"center\">Une aventure passionnante vous attend.</p><p align=\"center\">Bonne chasse!</p></body></html>", nullptr));
+        RegleTitre->setText(QCoreApplication::translate("Regle", "<html><head/><body><p><span style=\" font-size:22pt;\">D\303\251roulement du jeu</span></p></body></html>", nullptr));
     } // retranslateUi
 
 };

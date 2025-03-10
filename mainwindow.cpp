@@ -7,87 +7,123 @@ MainWindow::MainWindow(QWidget *parent)
 {
     ui->setupUi(this);
 
-    //mettre 1 si test et 0 si en parti normal
-    if (1==1){
-        ui->Capture->setVisible(true);
-        ui->Combat->setVisible(true);
-        ui->Genidex->setVisible(true);
-        ui->Historencontre->setVisible(true);
-        ui->Pause->setVisible(true);
-    }else{
-        ui->Capture->setVisible(false);
-        ui->Combat->setVisible(false);
-        ui->Genidex->setVisible(false);
-        ui->Historencontre->setVisible(false);
-        ui->Pause->setVisible(false);
+    buttons << ui->Start << ui->Commande << ui->Regle << ui->Quitter;
+
+    // Créer un timer pour la boucle régulière
+    timer = new QTimer(this);
+    connect(timer, &QTimer::timeout, this, &MainWindow::main);
+    timer->start(100);  // Le timer s'exécute toutes les 100 ms
+
+    for (int i = 0; i < buttons.size(); ++i) {
+        buttons[i]->setStyleSheet("background-color: white; color: black; font-size: 14px;");
     }
 }
 
 MainWindow::~MainWindow()
 {
+    delete timer;
     delete ui;
 }
 
 
 
-void MainWindow::on_Quitter_clicked(bool checked)
+void MainWindow::keyPressEvent(QKeyEvent *event)
+{
+    if (event->key() == Qt::Key_1) {
+        Clavier1 = 1;
+    }
+    if (event->key() == Qt::Key_2) {
+        Clavier2 = 1;
+    }
+    if (event->key() == Qt::Key_3) {
+        Clavier3 = 1;
+    }
+    if (event->key() == Qt::Key_4) {
+        Clavier4 = 1;
+    }
+}
+
+void MainWindow::keyReleaseEvent(QKeyEvent *event)
+{
+    if (event->key() == Qt::Key_1) {
+        Clavier1 = 0;
+    }
+    if (event->key() == Qt::Key_2) {
+        Clavier2 = 0;
+    }
+    if (event->key() == Qt::Key_3) {
+        Clavier3 = 0;
+    }
+    if (event->key() == Qt::Key_4) {
+        Clavier4 = 0;
+    }
+}
+
+void MainWindow::closeEvent(QCloseEvent *event)
+{
+    timer->stop();
+    //qDebug() << "Le timer a été arrêté.";
+
+    QWidget::closeEvent(event);
+}
+
+void MainWindow::showEvent(QShowEvent *event)
+{
+    timer->start();
+    //qDebug() << "Le timer a redémarré.";
+
+    QWidget::showEvent(event);
+}
+
+
+
+void MainWindow::quitter()
 {
     QApplication::quit();
 }
 
 
-void MainWindow::on_Start_clicked(bool checked)
+void MainWindow::startGame()
 {
-    choixJoueur = new ChoixJoueur(this);
+    Map* map = new Map(this);
+    ChoixJoueur *choixJoueur = new ChoixJoueur(map, this);
+    connect(choixJoueur, &ChoixJoueur::retourMainWindow, this, &MainWindow::show);
     choixJoueur->show();
 }
 
 
-void MainWindow::on_Regle_clicked(bool checked)
+void MainWindow::menuRegle()
 {
     regle = new Regle(this);
     regle->show();
 }
 
 
-void MainWindow::on_Commande_clicked(bool checked)
+void MainWindow::menuCommande()
 {
     commande = new Commande(this);
     commande->show();
 }
 
-
-void MainWindow::on_Capture_clicked(bool checked)
+void MainWindow::main()
 {
-    capture = new Capture(this);
-    capture->show();
-}
+    if (Clavier1)
+    {
+        startGame();
+        timer->stop();
 
-
-void MainWindow::on_Combat_clicked(bool checked)
-{
-    combat = new Combat(this);
-    combat->show();
-}
-
-
-void MainWindow::on_Genidex_clicked(bool checked)
-{
-    genidex = new Genidex(this);
-    genidex->show();
-}
-
-
-void MainWindow::on_Historencontre_clicked(bool checked)
-{
-    historencontre = new HistoRencontre(this);
-    historencontre->show();
-}
-
-
-void MainWindow::on_Pause_clicked(bool checked)
-{
-    pause = new Pause(this);
-    pause->show();
+    }else if (Clavier2)
+    {
+        menuCommande();
+        timer->stop();
+    }else if (Clavier3)
+    {
+        menuRegle();
+        timer->stop();
+    }else if (Clavier4)
+    {
+        quitter();
+        timer->stop();
+    }
 }
 

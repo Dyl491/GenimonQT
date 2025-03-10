@@ -4,6 +4,7 @@
 #include <QSerialPort>
 #include <QJsonDocument>
 #include <QJsonObject>
+#include <QJsonArray>
 
 class SerialCommunication : public QObject
 {
@@ -16,6 +17,7 @@ public:
     void connectToArduino();
     void startReading();
     void stopReading();
+    void sendJsonToArduino(const QString &message, int segment);
 
 signals:
     void dataReceived(QJsonObject data);  // Signal pour envoyer les données à MainWindow

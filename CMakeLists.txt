@@ -27,18 +27,28 @@ if(${QT_VERSION_MAJOR} GREATER_EQUAL 6)
         Image.qrc
         regle.h regle.cpp regle.ui
         combat.h combat.cpp combat.ui
-        extfaculte.h extfaculte.cpp extfaculte.ui
-        intfaculte.h intfaculte.cpp intfaculte.ui
+        Map.h Map.cpp Map.ui
+
         choixjoueur.h choixjoueur.cpp choixjoueur.ui
         choixgenimon.h choixgenimon.cpp choixgenimon.ui
         capture.h capture.cpp capture.ui
         historencontre.h historencontre.cpp historencontre.ui
         genidex.h genidex.cpp genidex.ui
-        pause.h pause.cpp pause.ui
+
 
 
         serialcommunication.h serialcommunication.cpp
         commande.h commande.cpp commande.ui
+        Genimon.h
+        Genimon.cpp
+        GestionJeu.h
+        Joueur.h
+        Vecteur.h
+        GenimonS.h
+        unistd.h
+        GestionJeu.cpp
+        Joueur.cpp
+        GenimonS.cpp
 
     )
 # Define target properties for Android with Qt 6 as:
