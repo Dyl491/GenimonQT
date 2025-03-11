@@ -49,6 +49,7 @@ if(${QT_VERSION_MAJOR} GREATER_EQUAL 6)
         GestionJeu.cpp
         Joueur.cpp
         GenimonS.cpp
+        menuManager.h menuManager.cpp
 
     )
 # Define target properties for Android with Qt 6 as:
