@@ -119,6 +119,7 @@ void ChoixJoueur::continuerMap()
         map->setNomJoueur(nomJoueur);
         map->showExtFaculte();
         map->show();
+        joueur = new Joueur(5, 5, this); //position initiale sur la carte
     }
 
     emit retourMainWindow();
@@ -261,6 +262,7 @@ void ChoixJoueur::main()
         {
             Clavier1 =0;
             continuerMap();
+
         }
 
         if (Clavier2)

@@ -25,10 +25,10 @@ MainWindow::~MainWindow()
     delete ui;
 }
 
-
-
+//menu + deplacement
 void MainWindow::keyPressEvent(QKeyEvent *event)
 {
+    // Gestion des touches numériques
     if (event->key() == Qt::Key_1) {
         Clavier1 = 1;
     }
@@ -41,7 +41,24 @@ void MainWindow::keyPressEvent(QKeyEvent *event)
     if (event->key() == Qt::Key_4) {
         Clavier4 = 1;
     }
+
+    // Gestion du déplacement du joueur uniquement s'il existe
+    if (joueur) {
+        if (event->key() == Qt::Key_W) {
+            joueur->deplacerJoueur('w');
+        }
+        if (event->key() == Qt::Key_A) {
+            joueur->deplacerJoueur('a');
+        }
+        if (event->key() == Qt::Key_D) {
+            joueur->deplacerJoueur('d');
+        }
+        if (event->key() == Qt::Key_S) {
+            joueur->deplacerJoueur('s');
+        }
+    }
 }
+
 
 void MainWindow::keyReleaseEvent(QKeyEvent *event)
 {
@@ -89,6 +106,9 @@ void MainWindow::startGame()
     ChoixJoueur *choixJoueur = new ChoixJoueur(map, this);
     connect(choixJoueur, &ChoixJoueur::retourMainWindow, this, &MainWindow::show);
     choixJoueur->show();
+
+    //joueur = new Joueur(5, 5, this); //position initiale sur la carte
+    //joueur->show();
 }
 
 

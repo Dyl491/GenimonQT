@@ -7,6 +7,7 @@
 #include <QList>
 #include <QLabel>
 #include "Map.h"
+#include "Joueur.h"
 
 namespace Ui {
 class ChoixJoueur;
@@ -34,6 +35,7 @@ private:
     Map *map;
     SerialCommunication *serialComm;    //Communication Arduino
     QTimer *timer;
+    Joueur *joueur;
 
     void continuerMap();
     void retourMain();
@@ -49,7 +51,7 @@ private:
 
 signals:
     void retourMainWindow();
-
+    void quizTermine(Map* map);
 };
 
 #endif // CHOIXJOUEUR_H

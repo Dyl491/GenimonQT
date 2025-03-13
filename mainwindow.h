@@ -7,6 +7,7 @@
 #include "regle.h"
 #include "choixjoueur.h"
 #include "commande.h"
+#include "joueur.h"
 
 QT_BEGIN_NAMESPACE
 namespace Ui {
@@ -19,7 +20,7 @@ class MainWindow : public QMainWindow
     Q_OBJECT
 
 public:
-    MainWindow(QWidget *parent = nullptr);
+    explicit MainWindow(QWidget *parent = nullptr);
     ~MainWindow();
 
 private slots:
@@ -34,8 +35,10 @@ private:
     SerialCommunication *serialComm;    //Communication Arduino
     QTimer *timer;
 
+    bool joueurVisible = false;
     Regle *regle;
     Commande *commande;
+    Joueur *joueur = nullptr;
 
     QList<QLabel*> buttons;
 

@@ -1,6 +1,8 @@
 #ifndef JOUEUR_H
 #define JOUEUR_H
 
+#include <QPixmap>
+#include <QLabel>
 #include <iostream>
 #include <ctime>
 #include "Genimon.h"
@@ -28,12 +30,16 @@ struct genimonChoisi
     int indexJ = 0;
 };
 
-class Joueur
+class Joueur: public QWidget
 {
+
+    Q_OBJECT
+
 public:
-    Joueur(int x0 = 10, int y0 = 10);
+    Joueur(int x0 = 10, int y0 = 10, QWidget *parent = nullptr);
     ~Joueur();
     void afficherPartie();
+    void deplacerJoueur(char direction); //nouveau
     void afficherMenuPrincipal();
     void afficherMenuGeniedex(bool afficherObjets);
     void creerTerrain();
@@ -66,6 +72,9 @@ public:
     int borne_x_max;
     int borne_y_max;
 private:
+    QLabel *spriteJoueur;  //image du joueur
+    QPixmap imageJoueur;   //ressource image
+
     char terrain[dimensionTerrain_x][dimensionTerrain_y];
     caseGenidex genidex[8];
     vector<Genimon> historique;
